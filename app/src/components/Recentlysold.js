@@ -1,37 +1,39 @@
+
 import React from 'react'
 import '../Css/Banner.css'
-
-const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMode, numberOfMiles, description }) => {
-    return (
-        <>
-            <div className='cardsection'>
-                <div className="card">
-                    <div className="card-image">
+import '../CSS/Recentlysold.css'
+const Recentlysold = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMode, numberOfMiles, description }) => {
+  return (
+  <>
+     <div className='cardsection'>
+                <div className="cards">
+                    <div className="cardimage">
                         <img className='cardimg' src={imageUrl} alt={title} />
                     </div>
-                    <div className='main-pill'>
-                        <div className='pill-text row'>
+                    <div className='cells'>
+                    <div className='pillmain soldrecent'>
+                        <div className='pilltext row'>
                             {/* <div className='col-4 para-text'>
                                     <p>Ends in</p>
                                     <h1 className='time'>{EndTime}</h1>
 
                                 </div> */}
 
-                            <div className='col-4 currentbid'>
+                            {/* <div className='col-4 currentbid'>
                                 <p>Ends in</p>
                                 <p className='endstime'>{EndTime}</p>
+                            </div> */}
+                            {/* <span>|</span> */}
+                            <div className='col-6 currentbids'>
+                                <h3 className='soldfor'>Sold For</h3>
+                                <h3 className='price'>£{CurrentPrice}</h3>
                             </div>
                             <span>|</span>
-                            <div className='col-4 currentbid'>
-                                <p>CURRENT BID</p>
-                                <p className='rupess'>€ {CurrentPrice}</p>
-                            </div>
-                            <span>|</span>
-                            <div className='col-4'>
-                                <p className='bids'>
+                            <div className='col-6'>
+                                <h3 className='bid'>
                                     BID
-                                </p>
-                                <p className='notime'>{numberOfBids}</p>
+                                </h3>
+                                <h3 className='timbidsnum'>{numberOfBids}</h3>
                             </div>
                         </div>
                     </div>
@@ -61,10 +63,9 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                     </div>
                 </div>
             </div>
-
-
-        </>
-    )
+            </div>
+  </>
+  )
 }
 
-export default Banner
+export default Recentlysold

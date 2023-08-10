@@ -190,8 +190,10 @@
     transform: scaleX(1); /* Show the line when the input is focused */
   }
   .searchig img{
-    height: 78px;
+    height: 67px;
     width: 78px;
+
+
   }
   .searchBar {
     /* ... your existing styles ... */
@@ -212,7 +214,11 @@
     padding: 0 32px;
     margin-top: 52px;
   }
-  
+  .recent_main{
+    margin-top: 36px;
+    margin-bottom: 116px;
+    padding: 0 86px;
+  }
   .action{
     color: #E8E8E8;
     font-family: Fira Sans;

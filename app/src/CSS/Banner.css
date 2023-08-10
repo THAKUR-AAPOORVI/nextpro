@@ -195,7 +195,7 @@
     font-family: Founders Grotesk;
     font-size: 12px;
     font-weight: 400;
-    /* line-height: 14px; */
+    line-height: 14px;
     letter-spacing: 0.6000000238418579px;
     text-align: center;
     color: #969696;
@@ -218,13 +218,14 @@
     top: 30px;
     left: 312px;
     color:  #000000;
+    margin-left: 10px;
  
   
   }
   
   .card-title {
     font-family: Fira Sans;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 500;
     /* line-height: 66px; */
     letter-spacing: 0px;
@@ -301,14 +302,15 @@
   
   /* scroller css */
   .scroller {
-    display: flex;  
+    display: flex; 
+    margin-top: -7%; 
     overflow-x: auto;          /* Use flexbox layout */
        /* Enable horizontal scrolling if content overflows */
     overflow-y: hidden;     /* Hide vertical scrollbar */
     flex-shrink: 0;         /* Prevent shrinking of container */
-    margin-right: 20px;     /* Add a right margin */
+     /* Add a right margin */
     z-index: 10;            /* Set the z-index for stacking context */
-    margin-top: -100px;     /* Negative margin, but don't forget the unit (e.g., px) */
+    /* margin-top: -100px;     Negative margin, but don't forget the unit (e.g., px) */
   }
   
   /* fotter start */
@@ -329,6 +331,7 @@
   
   .content {
     text-align: center;
+    margin-top: 60px;
   }
   
   h2 {
@@ -350,6 +353,7 @@
   .p-container {
     /* Set a maximum width for the paragraph container */
     margin: 0 auto; /* Center the container */
+    margin-bottom: 10%;
   }
   
   p {
@@ -371,7 +375,7 @@
   
   input {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #0E2328;
     padding: 5px;
     width: auto; /* Allow input width to adjust based on content */
     max-width: 100%; /* Set a maximum width for the input fields */
@@ -385,37 +389,15 @@
     margin-right: 0;
   }
   
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  button {
-    background-color: #0e2328;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    max-width: 42%;
-    width: 100%; /* Make the button fill the container width */
-  }
-  
-  .button-container button {
-    background-color: #0e2328; /* Background color before hover */
-  }
-  
-  button:hover {
-    background-color: #003b79; /* Background color on hover */
-  }
+ 
   
   .green-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #0e2328;
-    padding: 30px 0;
+    padding: 66px 0;
+    height: 400px;
   }
   
   .center-image {
@@ -423,14 +405,54 @@
     display: block;
     margin: 0 auto;
   }
-  
+  .newsletter{
+
+
+    font-family: Fira Sans;
+font-size: 60px;
+font-weight: 500;
+line-height: 72px;
+letter-spacing: -0.8687499761581421px;
+text-align: center;
+
+font-family: Fira Sans;
+font-size: 60px;
+font-weight: 500;
+line-height: 72px;
+letter-spacing: -0.8687499761581421px;
+text-align: center;
+
+  }
   .horizontal-line {
     width: 90%;
     margin-top: 12%;
     border: none;
     border-top: 1px solid white;
   }
+  .newslettercontainer{
+    background-image: url('/public/asset/Combined Shape.png');
+  }
   
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 663px; /* You can adjust the height as needed */
+    background-image: url('../../../public/asset/imagebg.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
   
   /* Media Queries for Responsive Design */
   
@@ -471,30 +493,63 @@
       margin-top: 8%; /* Adjust margin for smaller screens */
     }
   }
-  .buttonlast {
-    display: flex;  /* Use flexbox to arrange items in a row */
-    background-color: black;
-    width: 500px;   /* Set the fixed width */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 10px;   /* Adjust padding as needed */
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Distribute items evenly along the row */
-    color: white;   /* Text color */
+ 
+.industry{
+  font-family: Founders Grotesk;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 627px;
+  height: 72px;
+  top: 107px;
+  left: 143px;
+  padding: 0 50px;
+      
 }
 
-.submit {
-    flex: 1;   /* Allow the button to expand to fill available space */
-    padding-right: 10px;  /* Add spacing between the button and arrow */
+
+
+.buttonlast {
+  display: flex;
+  background-color: #0E2328;
+  align-items: center;
+  width: 479px !important;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  margin-left: 12%;
+margin-top: 7%;
 }
 
-button {
-    background-color: transparent;
-    /* border: 2px solid white; */
-    padding: 5px 10px;
-    color: white;
-    margin-right: 5px;
+.submit button {
+  background-color:
+  #0E2328;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
 }
 
-.arrowsubmit {
-    padding-left: 10px; /* Add spacing between the arrow and button */
+.arrowsubmit img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Remove hover effect */
+.submit button.no-hover:hover {
+  background-color: 
+  #0E2328;
+}
+
+.signuptext{
+  width: 939px;
+height: 72px;
+
 }
