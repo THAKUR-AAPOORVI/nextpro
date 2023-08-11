@@ -15,6 +15,15 @@ const Header = () => {
   useEffect(() => {
     // Code inside useEffect will run only on the client side
   }, []);
+
+
+  
+
+    const [showContainer, setShowContainer] = useState(false);
+  
+    const toggleContainer = () => {
+      setShowContainer(!showContainer);
+    };
     return (
         <>
 
@@ -114,7 +123,7 @@ const Header = () => {
 <h1 >Filter results</h1>
 </div>
 <div className='filterimg'>
-<span><img src='../asset/filterimg.png'></img></span>
+<span><img  onClick={toggleContainer} src='../asset/filterimg.png'></img></span>
 </div>
 
 
@@ -139,6 +148,62 @@ const Header = () => {
     </div>
 
             </div>
+
+
+
+
+
+{/* filter components */}
+
+
+<div>
+      {/* <button onClick={toggleContainer}>Filter</button> */}
+      {showContainer && (
+        <div className="container filterboc">
+            <div  className='flex-listt'><h4>Vehicle</h4>
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div>
+          <div  className='flex-listt'><h4>Vehicle</h4>
+ 
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div>
+          <div  className='flex-listt'><h4>Vehicle</h4>
+ 
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div>
+          <div  className='flex-listt'><h4>Vehicle</h4>
+ 
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div>
+          <div  className='flex-listt'><h4>Vehicle</h4>
+ 
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div>
+        <div className='flex-listt' >Vehicle
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div>
+          <div  className='flex-listt'><h4>Vehicle</h4>
+ 
+ <ul>
+    <li>Car</li>
+ </ul>
+        </div></div>
+      )}
+    </div>
+
+
 
         
         </>

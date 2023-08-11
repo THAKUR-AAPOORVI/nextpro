@@ -1,9 +1,21 @@
-
+'use client'
 import React from 'react'
 import Banner from './Banner';
 
 import Recentlysold from './Recentlysold'
+import RecentlyUnsold from './RecentlyUnsold'
+import CommingSoon from './CommingSoon'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import '../components/swiper.css'
+// import required modules
+// import { Pagination } from 'swiper/modules';
+import { images } from '../../../next.config';
 const data = [
     {
         "image": "../asset/Bitmap (1).png",
@@ -120,7 +132,7 @@ const data = [
 const solddata = [
     {
         "image": "../asset/Bitmap (1).png",
-        "endTime": "18:00:00",
+        "soldPrice": "270000",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
         "title": "Porsche Cayman 2007",
@@ -132,7 +144,52 @@ const solddata = [
     {
 
         "image": "../asset/2007.png",
-        // "endTime": "15:45:00",
+        "soldPrice": "270000",
+        "numberOfBids": 12,
+        "currentBidPrice": 27000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 1500,
+        "countryIconImage": "https://example.com/flags/china.png"
+    },
+    {
+        "image": "../asset/Bitmap (1).png",
+        "soldPrice": "270000",
+        "numberOfBids": 5,
+        "currentBidPrice": 15000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 25000,
+        "countryIconImage": "https://example.com/flags/usa.png"
+    },
+    {
+
+        "image": "../asset/2007.png",
+        "soldPrice": "270000",
+        "numberOfBids": 12,
+        "currentBidPrice": 27000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 1500,
+        "countryIconImage": "https://example.com/flags/china.png"
+    },  {
+        "image": "../asset/Bitmap (1).png",
+        "soldPrice": "270000",
+        "numberOfBids": 5,
+        "currentBidPrice": 15000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 25000,
+        "countryIconImage": "https://example.com/flags/usa.png"
+    },
+    {
+
+        "image": "../asset/2007.png",
+        "soldPrice": "270000",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
         "title": "Porsche Cayman 2007",
@@ -144,6 +201,234 @@ const solddata = [
 
 ]
 
+const unsolddata = [
+    {
+        "image": "../asset/Bitmap (1).png",
+        "status": "Unsold",
+        "numberOfBids": 5,
+        "currentBidPrice": 15000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 25000,
+        "countryIconImage": "https://example.com/flags/usa.png"
+    },
+    {
+        "image": "../asset/americascope.png",
+        "status": "Unsold",
+        "numberOfBids": 10,
+        "currentBidPrice": 18000,
+        "title": "America Sport Coupe",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 15000,
+        "countryIconImage": "https://example.com/flags/uk.png"
+    },
+    {
+        "image": "../asset/porsche2.png",
+        "status": "Unsold",
+        "numberOfBids": 3,
+        "currentBidPrice": 12000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 30000,
+        "countryIconImage": "https://example.com/flags/germany.png"
+    },
+    {
+        "image": "../asset/ferrari.png",
+        "status": "Unsold",
+        "numberOfBids": 7,
+        "currentBidPrice": 22000,
+        "title": "Ferrari 250 GT Lusso 1964 ",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 40000,
+        "countryIconImage": "https://example.com/flags/canada.png"
+    },
+    {
+        "image": "../asset/rollsro.png",
+        "status": "Unsold",
+        "numberOfBids": 2,
+        "currentBidPrice": 13500,
+        "title": "Rolls-Royce Ghost 2016 ",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 12000,
+        "countryIconImage": "https://example.com/flags/japan.png"
+    },
+    {
+        "image": "../asset/214turbo.png",
+        "status": "Unsold",
+        "numberOfBids": 4,
+        "currentBidPrice": 9000,
+        "title": "2014 | Porsche 911 Turbo",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 5000,
+        "countryIconImage": "https://example.com/flags/france.png"
+    },
+    {
+        "image": "../asset/lg.png",
+        "status": "Unsold",
+        "numberOfBids": 6,
+        "currentBidPrice": 15800,
+        "title": "Lamborghini Aventador LP 780-4 ",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 18000,
+        "countryIconImage": "https://example.com/flags/italy.png"
+    },
+    {
+        "image": "../asset/2009pr.png",
+        "status": "Unsold",
+        "numberOfBids": 9,
+        "currentBidPrice": 10500,
+        "title": "2009 | Porsche 911 Carrera",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 32000,
+        "countryIconImage": "https://example.com/flags/spain.png"
+    },
+    {
+        "image": "../asset/1973.png",
+        "status": "Unsold",
+        "numberOfBids": 1,
+        "currentBidPrice": 7500,
+        "title": "1973 BMW 3.0",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 8000,
+        "countryIconImage": "https://example.com/flags/australia.png"
+    },
+    {
+        "image": "../asset/2007.png",
+        "status": "Unsold",
+        "numberOfBids": 12,
+        "currentBidPrice": 27000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 1500,
+        "countryIconImage": "https://example.com/flags/china.png"
+    }
+]
+
+
+
+const soonData = [
+    {
+        "image": "../asset/Bitmap (1).png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 5,
+        "currentBidPrice": 15000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 25000,
+        "countryIconImage": "https://example.com/flags/usa.png"
+    },
+    {
+        "image": "../asset/americascope.png",
+        "arriveDate": " 14th october",
+        "numberOfBids": 10,
+        "currentBidPrice": 18000,
+        "title": "America Sport Coupe",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 15000,
+        "countryIconImage": "https://example.com/flags/uk.png"
+    },
+    {
+        "image": "../asset/porsche2.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 3,
+        "currentBidPrice": 12000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 30000,
+        "countryIconImage": "https://example.com/flags/germany.png"
+    },
+    {
+        "image": "../asset/ferrari.png",
+        "arriveDate": " 15th october",
+        "numberOfBids": 7,
+        "currentBidPrice": 22000,
+        "title": "Ferrari 250 GT Lusso 1964 ",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 40000,
+        "countryIconImage": "https://example.com/flags/canada.png"
+    },
+    {
+        "image": "../asset/rollsro.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 2,
+        "currentBidPrice": 13500,
+        "title": "Rolls-Royce Ghost 2016 ",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 12000,
+        "countryIconImage": "https://example.com/flags/japan.png"
+    },
+    {
+        "image": "../asset/214turbo.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 4,
+        "currentBidPrice": 9000,
+        "title": "2014 | Porsche 911 Turbo",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 5000,
+        "countryIconImage": "https://example.com/flags/france.png"
+    },
+    {
+        "image": "../asset/lg.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 6,
+        "currentBidPrice": 15800,
+        "title": "Lamborghini Aventador LP 780-4 ",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 18000,
+        "countryIconImage": "https://example.com/flags/italy.png"
+    },
+    {
+        "image": "../asset/2009pr.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 9,
+        "currentBidPrice": 10500,
+        "title": "2009 | Porsche 911 Carrera",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 32000,
+        "countryIconImage": "https://example.com/flags/spain.png"
+    },
+    {
+        "image": "../asset/1973.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 1,
+        "currentBidPrice": 7500,
+        "title": "1973 BMW 3.0",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "RHD",
+        "numberOfMiles": 8000,
+        "countryIconImage": "https://example.com/flags/australia.png"
+    },
+    {
+        "image": "../asset/2007.png",
+        "arriveDate": " 13th october",
+        "numberOfBids": 12,
+        "currentBidPrice": 27000,
+        "title": "Porsche Cayman 2007",
+        "subheading": "Eu tristique condimentum eu penatibus ad a orci condimentum dapibus adipiscing dolor dictumst eu.",
+        "lhdOrRhdDrive": "LHD",
+        "numberOfMiles": 1500,
+        "countryIconImage": "https://example.com/flags/china.png"
+    }
+]
+
 
 
 
@@ -153,24 +438,56 @@ const solddata = [
 
 
 const CallBanner = () => {
+
+
+    
+    
     return (
         <>
-            <div className='scroller' >
-                {data.map((item, index) => (
-                    <Banner
-                        key={index}
-                        imageUrl={item.image} // Use the actual property from your data object
-                        EndTime={item.endTime}
-                        CurrentPrice={item.currentBidPrice}
-                        numberOfBids={item.numberOfBids}
-                        title={item.title} // Use the actual property from your data object
-                        description={item.subheading} // Use the actual property from your data object
-                        driveMode={item.lhdOrRhdDrive}
-                        numberOfMiles={item.numberOfMiles}
-                    />
-                ))}
-            </div>
 
+
+
+
+
+
+       {/* <div className='cardsmove'>
+       <div
+        className='slider-container'
+   
+      > */}
+
+  <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            // modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide className={SwiperSlide}>
+        {data.map((item, index) => (
+     
+          <Banner
+            key={index}
+            imageUrl={item.image}
+            EndTime={item.endTime}
+            CurrentPrice={item.currentBidPrice}
+            numberOfBids={item.numberOfBids}
+            title={item.title}
+            description={item.subheading}
+            driveMode={item.lhdOrRhdDrive}
+            numberOfMiles={item.numberOfMiles}
+          />
+       
+        ))}
+          </SwiperSlide>
+    </Swiper>
+      {/* </div>
+    </div> */}
+
+ 
+   
             <div className='row view-row recent_main'>
                 <div className='action'>
                     <h1 className='recent'>Recently sold (32) </h1>
@@ -185,12 +502,12 @@ const CallBanner = () => {
                 </div>
             </div>
 
-            <div className='scroller' >
+           {/* <div className='scroller' >
                 {solddata.map((item, index) => (
                     <Recentlysold
                         key={index}
                         imageUrl={item.image} // Use the actual property from your data object
-                        // EndTime={item.endTime}
+                        soldPrice={item.soldPrice}
                         CurrentPrice={item.currentBidPrice}
                         numberOfBids={item.numberOfBids}
                         title={item.title} // Use the actual property from your data object
@@ -199,7 +516,33 @@ const CallBanner = () => {
                         numberOfMiles={item.numberOfMiles}
                     />
                 ))}
-            </div>
+            </div> */}
+
+<Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        // modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide className={SwiperSlide}>
+        {solddata.map((item, index) => (
+                    <Recentlysold
+                        key={index}
+                        imageUrl={item.image} // Use the actual property from your data object
+                        soldPrice={item.soldPrice}
+                        CurrentPrice={item.currentBidPrice}
+                        numberOfBids={item.numberOfBids}
+                        title={item.title} // Use the actual property from your data object
+                        description={item.subheading} // Use the actual property from your data object
+                        driveMode={item.lhdOrRhdDrive}
+                        numberOfMiles={item.numberOfMiles}
+                    />
+                ))}
+        </SwiperSlide>
+        </Swiper>
 
 
             <div className='row view-row recent_main'>
@@ -217,11 +560,11 @@ const CallBanner = () => {
             </div>
 
             <div className='scroller' >
-                {data.map((item, index) => (
-                    <Banner
+                {unsolddata.map((item, index) => (
+                    <RecentlyUnsold
                         key={index}
                         imageUrl={item.image} // Use the actual property from your data object
-                        EndTime={item.endTime}
+                        status={item.status}
                         CurrentPrice={item.currentBidPrice}
                         numberOfBids={item.numberOfBids}
                         title={item.title} // Use the actual property from your data object
@@ -247,13 +590,13 @@ const CallBanner = () => {
             </div>
 
             <div className='scroller' >
-                {data.map((item, index) => (
-                    <Banner
+                {soonData.map((item, index) => (
+                    <CommingSoon
                         key={index}
                         imageUrl={item.image} // Use the actual property from your data object
-                        EndTime={item.endTime}
-                        CurrentPrice={item.currentBidPrice}
-                        numberOfBids={item.numberOfBids}
+                        arriveDate={item.arriveDate}
+                        // CurrentPrice={item.currentBidPrice}
+                        // numberOfBids={item.numberOfBids}
                         title={item.title} // Use the actual property from your data object
                         description={item.subheading} // Use the actual property from your data object
                         driveMode={item.lhdOrRhdDrive}

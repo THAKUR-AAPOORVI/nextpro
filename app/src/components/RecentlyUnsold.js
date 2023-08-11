@@ -1,13 +1,9 @@
 import React from 'react'
 import '../Css/Banner.css'
 
-
-
-
-const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMode, numberOfMiles, description }) => {
+const RecentlyUnsold = ({ imageUrl, title, EndTime, status,CurrentPrice, numberOfBids, driveMode, numberOfMiles, description }) => {
     return (
         <>
-     
             <div className='cardsection'>
                 <div className="card">
                     <div className="card-image">
@@ -23,15 +19,15 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                                 </div> */}
 
                             <div className='col-4 currentbid'>
-                                <p className='endsin'>ENDS IN</p>
-                                <p className='endstime'>{EndTime}</p>
+                                <p>STATUS</p>
+                                <p className='endstime'>{status}</p>
                             </div>
-                            <span style={{color:"#E3E3E3"}}>|</span>
+                            <span style={{color:'#f0f0f0'}}>|</span>
                             <div className='col-4 currentbid'>
-                                <p className='currentsbids'>CURRENT BID</p>
+                                <p>CURRENT BID</p>
                                 <p className='rupess'>€ {CurrentPrice}</p>
                             </div>
-                                 <span style={{color:"#E3E3E3"}}>|</span>
+                            <span style={{color:'#f0f0f0'}}>|</span>
                             <div className='col-4'>
                                 <p className='bids'>
                                     BIDS
@@ -41,7 +37,6 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                         </div>
                     </div>
                     </div>
-
                     <div className="card-content">
 
                         <div className='TITLE-DESC '>
@@ -53,14 +48,16 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                         <div className='row lastrow'>
                             <div className='col-4 last-col'>
                                 <div className='wheelimg'>
-                                    <span><img src='../asset/wheel (2).png'></img> </span><span className='lhd' style={{ marginLeft: "21px" }}><h5>{driveMode}</h5></span>
+                                    <span>
+                                        <img src='../asset/wheel (2).png'>
+                                        </img> </span><span className='lhd' style={{ marginLeft: "21px" }}><h5>{driveMode}</h5></span>
                                 </div></div>
-                                 <span style={{color:"#E3E3E3"}}>|</span>
+                            <span style={{color:'#f0f0f0'}}>|</span>
 
                             <div className='col-4 speedimg speedometer'>
                                 <span><img src='../asset/icon miles.png'></img> </span><span className='speeds' style={{ marginLeft: "21px" }}><h5>{numberOfMiles} Miles</h5></span>
                             </div>
-                                 <span style={{color:"#E3E3E3"}}>|</span>
+                            <span style={{color:'#f0f0f0'}}>|</span>
                             <div className='col-4'>
                                 <span><img src='../asset/flag.png'></img> </span>
                             </div>
@@ -68,10 +65,10 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                     </div>
                 </div>
             </div>
-         
+
 
         </>
     )
 }
 
-export default Banner
+export default RecentlyUnsold

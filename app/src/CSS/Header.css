@@ -1,18 +1,26 @@
 .main{
     background-color: white;
   }
+  .mainarea {
+    /* background-image: url('/public/asset/1973.png'); */
+    background-image:url('../../../public/asset/headeroval.png');
+    background-size: cover; /* Adjust this as needed */
+    background-position: center; /* Adjust this as needed */
+height: 740px;
+  }
   
   .mainarea{
     /* height: 100vh; */
-   background-color: #000000;
-   height: 540px;
-   background: rgb(0, 0, 0);
-   border-radius: 0 0 138% 220% / 0 0 60% 60%;
+   /* background-color: #ff0000; */
+   /* height: 540px; */
+   /* background-image: url('/public/asset/headeroval.png'); */
+   /* background: rgb(0, 0, 0);
+   border-radius: 0 0 138% 220% / 0 0 60% 60%; */
    /* border-radius: 0 0 900% 900% / 0 0 1300% 1300% */
    /* clip-path: polygon(0 25%, 14% 41%, 28% 51%, 49% 54%, 66% 53%, 79% 48%, 89% 39%, 100% 27%, 100% 100%, 47% 100%, 0% 100%);
   margin-top: -70px; */
    /* width: 100vw; */
-   z-index: 2;
+   /* z-index: 2; */
   }
   .oval-outer{
     height: 100px;
@@ -203,7 +211,9 @@
       color: #969696; /* Change this color as needed */
     }
   }
-  
+  input::placeholder {
+    color: #969696; /* Change this to the color you desire */
+  }
   
   /* Live Auctions csss */
   
@@ -285,14 +295,62 @@
   }
   .industry{
     font-family: Founders Grotesk;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 33px;
     letter-spacing: 0px;
     text-align: center;
-    width: 627px;
+    width: 635px;
     height: 72px;
     top: 107px;
     left: 143px;
-        
+    padding: 0px 51px;
+color: #565656;
   }
+
+
+  /* ... your existing CSS ... */
+/* Default styles */
+.filterboc {
+  background-color: white;
+  margin-top: -22%;
+  margin-left: 2%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 1px 8px 0px #00000020;
+  border-radius: 10px;
+}
+
+.flex-list {
+  display: flex;
+  gap: 120px;
+  margin-top: 5%;
+}
+
+
+
+li{
+  color: #000000;
+  /* font-family: Founders Grotesk; */
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust these styles for smaller screens */
+  .filterboc {
+      margin-top: -10%;
+      height: auto;
+  }
+  
+  .flex-listt h4 {
+      flex-direction: column;
+      gap: 20px;
+  }
+}
