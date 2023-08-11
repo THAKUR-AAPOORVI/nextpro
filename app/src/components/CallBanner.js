@@ -448,26 +448,24 @@ const CallBanner = () => {
 
 
 
-
-
-       {/* <div className='cardsmove'>
+ {/* <div className='cardsmove'> */}
        <div
         className='slider-container'
    
-      > */}
+      > 
 
   <Swiper
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={-2} 
             pagination={{
               clickable: true,
             }}
             // modules={[Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide className={SwiperSlide}>
+           
         {data.map((item, index) => (
-     
+      <SwiperSlide className={SwiperSlide}>
           <Banner
             key={index}
             imageUrl={item.image}
@@ -479,12 +477,12 @@ const CallBanner = () => {
             driveMode={item.lhdOrRhdDrive}
             numberOfMiles={item.numberOfMiles}
           />
-       
+        </SwiperSlide>
         ))}
-          </SwiperSlide>
+         
     </Swiper>
-      {/* </div>
-    </div> */}
+      {/* </div> */}
+    </div>
 
  
    
@@ -520,15 +518,16 @@ const CallBanner = () => {
 
 <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+                    spaceBetween={-2} 
         pagination={{
           clickable: true,
         }}
         // modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className={SwiperSlide}>
+       
         {solddata.map((item, index) => (
+             <SwiperSlide className={SwiperSlide}>
                     <Recentlysold
                         key={index}
                         imageUrl={item.image} // Use the actual property from your data object
@@ -540,8 +539,9 @@ const CallBanner = () => {
                         driveMode={item.lhdOrRhdDrive}
                         numberOfMiles={item.numberOfMiles}
                     />
+                        </SwiperSlide>
                 ))}
-        </SwiperSlide>
+    
         </Swiper>
 
 
@@ -559,8 +559,18 @@ const CallBanner = () => {
                 </div>
             </div>
 
+            <Swiper
+            slidesPerView={3}
+                        spaceBetween={-2}  
+            pagination={{
+              clickable: true,
+            }}
+            // modules={[Pagination]}
+            className="mySwiper"
+          >
             <div className='scroller' >
                 {unsolddata.map((item, index) => (
+                     <SwiperSlide className={SwiperSlide}>
                     <RecentlyUnsold
                         key={index}
                         imageUrl={item.image} // Use the actual property from your data object
@@ -572,8 +582,10 @@ const CallBanner = () => {
                         driveMode={item.lhdOrRhdDrive}
                         numberOfMiles={item.numberOfMiles}
                     />
+                    </SwiperSlide>
                 ))}
             </div>
+            </Swiper>
 
             <div className='row view-row recent_main'>
                 <div className='action'>
@@ -589,8 +601,18 @@ const CallBanner = () => {
                 </div>
             </div>
 
+            <Swiper
+            slidesPerView={3}
+                        spaceBetween={-2}  
+            pagination={{
+              clickable: true,
+            }}
+            // modules={[Pagination]}
+            className="mySwiper"
+          >
             <div className='scroller' >
                 {soonData.map((item, index) => (
+                          <SwiperSlide className={SwiperSlide}>
                     <CommingSoon
                         key={index}
                         imageUrl={item.image} // Use the actual property from your data object
@@ -602,8 +624,10 @@ const CallBanner = () => {
                         driveMode={item.lhdOrRhdDrive}
                         numberOfMiles={item.numberOfMiles}
                     />
+                    </SwiperSlide>
                 ))}
             </div>
+            </Swiper>
 
             {/* <div className='row view-row'>
         <div className='action'>

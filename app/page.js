@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
     <div className='main'>
-    * <Header/> 
+     <Header/> 
      <CallBanner/>
-    <Abc/> 
+    {/* <Abc/>  */}
     
         </div>
     </>
