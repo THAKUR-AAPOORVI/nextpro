@@ -115,6 +115,10 @@ height: 740px;
     display: flex;
     justify-content: end;
   }
+  .rowpart{
+    display: flex;
+    justify-content: end;
+  }
   /* centerpart   */
   
   

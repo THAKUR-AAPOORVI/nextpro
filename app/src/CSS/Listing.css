@@ -1,11 +1,11 @@
-section{
+/* section{
 
     background-image:url('../../../public/asset/headeroval.png');
 
-    background-size: cover; /* Adjust this as needed */
-    background-position: center; /* Adjust this as needed */
-height: 740px;}
-.mainrowarea{
+    background-size: cover; 
+    background-position: center; 
+height: 740px;} */
+/* .mainrowarea{
     display:flex;
     justify-content: space-around;
 }
@@ -15,27 +15,27 @@ height: 740px;}
 .icimage{
     display: flex;
     justify-content: space-between !important;
-}
+} */
 .imgpart{
     /* margin-right: 2%; */
 }
-.mer{
+/* .mer{
     margin-inline: 34px;
 }
 .previouscar{
 
     display: flex;
     justify-content: center;
-}
-.cls{
+} */
+/* .cls{
     color: #E8DECF;
     padding-top: 10px;
 }
 .closebutton{
     display: flex;
     justify-content: center;
-}
-.closeimage{
+} */
+/* .closeimage{
     display: block;
 }
 
@@ -49,8 +49,8 @@ letter-spacing: -0.5px;
 text-align: center;
 
 
-}
-.headingarea h4{
+} */
+/* .headingarea h4{
     font-family: Founders Grotesk;
 font-size: 24px;
 font-weight: 400;
@@ -62,14 +62,14 @@ width: 600px;
 }
 .containerbox{
     margin-top: 5%;
-}
+} */
 .heading4{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     /* width: 600px; */
-    align-items: center;
+    /* align-items: center; */
 }
-.cellpart{
+/* .cellpart{
     border-radius: 50px;
     background-color: white;
     width: 800px;
@@ -80,4 +80,4 @@ width: 600px;
     padding: 0 22%;
     margin-top: 8%;
 
-}
+} */

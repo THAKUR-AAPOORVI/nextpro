@@ -52,7 +52,7 @@ const Header = () => {
 
 <section className='signup'>
             <div className='container'>
-                <div className='row'>
+                <div className='rowpart'>
                     <div className='text'>
 
 
