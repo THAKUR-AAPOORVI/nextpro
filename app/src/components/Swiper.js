@@ -4,7 +4,7 @@ import RecentlyUnsold from './RecentlyUnsold';
 import Banner from './Banner';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../components/swiper.css';
+import '../CSS/swiper.css';
 
 const solddata = [
     {

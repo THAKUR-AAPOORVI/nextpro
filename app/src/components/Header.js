@@ -198,107 +198,86 @@ const Header = () => {
 <div className="row">
       <div className="column">
         <div className="heading">Vehicle Type</div>
-
-        <label><input type="checkbox" /> Car</label><br />
+        <label className="checkbox-label"><input type="checkbox" /> Car</label><br />
         {/* <label><input type="checkbox" /> SUV</label><br />
         <label><input type="checkbox" /> Truck</label><br /> */}
         {/* Add more vehicle types here */}
       </div>
-
       {/* Repeat the above structure for the other columns */}
-    </div>
-
-
-
-
-    <div className="row">
+    {/* </div> */}
+    {/* <div className="row"> */}
       <div className="column">
         <div className="heading">Vehicle Type</div>
-
-        <label><input type="checkbox" /> Porsche (20)</label><br />
-        <label><input type="checkbox" />Ferrari (9)</label><br />
-        <label><input type="checkbox" />  BMW (7) </label><br />
-        <label><input type="checkbox" />   Fiat (6)  </label><br />
-        <label><input type="checkbox" /> Mercedes-Benz (6)</label><br />
-        <label><input type="checkbox" />  Lamborghini (5) </label><br />
-        <label><input type="checkbox" />  Volkswagen (4) </label><br />
-        <label><input type="checkbox" />  Jaguar (3) </label><br />
-        <label><input type="checkbox" />  Lancia (3) </label><br />
-        <label><input type="checkbox" />  Audi (2)</label><br />
-
+        <label className="checkbox-label"><input type="checkbox" /> Porsche (20)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Ferrari (9)</label>
+  <label className="checkbox-label"><input type="checkbox" /> BMW (7)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Fiat (6)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Mercedes-Benz (6)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Lamborghini (5)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Volkswagen (4)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Jaguar (3)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Lancia (3)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Audi (2)</label>
         {/* Add more vehicle types here */}
       </div>
-
       {/* Repeat the above structure for the other columns */}
-    </div>
-
-
-    <div className="row">
+    {/* </div> */}
+    {/* <div className="row"> */}
       <div className="column">
         <div className="heading">Auction status</div>
- 
-        <label><input type="checkbox" /> Live</label><br />
-        <label><input type="checkbox" /> Coming soon</label><br />
-        <label><input type="checkbox" /> Sold</label><br />
-        <label><input type="checkbox" /> Unsold</label><br />
-        <label><input type="checkbox" /> About to go</label><br />
-        {/* Add more vehicle types here */}
-      </div>
 
+        <label className="checkbox-label"><input type="checkbox" /> Live </label>
+  <label className="checkbox-label"><input type="checkbox" /> Coming soon</label>
+  <label className="checkbox-label"><input type="checkbox" /> Sold</label>
+  <label className="checkbox-label"><input type="checkbox" /> Unsold</label>
+  <label className="checkbox-label"><input type="checkbox" /> About to go</label>
+
+        {/* Add more vehicle types here */}
+      {/* </div> */}
       {/* Repeat the above structure for the other columns */}
     </div>
-
-    <div className="row">
+    {/* <div className="row"> */}
       <div className="column">
         <div className="heading">Seller type</div>
-     
-        <label><input type="checkbox" /> Private (91) </label><br />
-        <label><input type="checkbox" />  Trade (18)</label><br />
-        <label><input type="checkbox" /> Managed (4)</label><br />
+
+        <label className="checkbox-label"><input type="checkbox" /> Private (91) </label>
+  <label className="checkbox-label"><input type="checkbox" />Trade (18)</label>
+  <label className="checkbox-label"><input type="checkbox" /> Managed (4)</label>
+
+
         {/* Add more vehicle types here */}
       </div>
-
       {/* Repeat the above structure for the other columns */}
-    </div>
-
-    <div className="row">
+    {/* </div> */}
+    {/* <div className="row"> */}
       <div className="column">
         <div className="heading">Location</div>
-
-        <label><input type="checkbox" /> United Kingdom (91) </label><br />
-        <label><input type="checkbox" /> Australia (9)</label><br />
-        <label><input type="checkbox" /> Italy (5)</label><br />
-        <label><input type="checkbox" /> United States Of America (3)</label><br />
-        <label><input type="checkbox" /> Germany (4)</label><br />
-        <label><input type="checkbox" /> Spain (4)</label><br />
-        <label><input type="checkbox" /> Hong Kong (4)</label><br />
-        <label><input type="checkbox" />Ireland (2)</label><br />
-        <label><input type="checkbox" /> Netherlands (5) </label><br />
-        <label><input type="checkbox" />Sweden (1)</label><br />
+        <label className="checkbox-label"><input type="checkbox" /> United Kingdom (91) </label>
+        <label className="checkbox-label"><input type="checkbox" /> Australia (9)</label>
+        <label className="checkbox-label"><input type="checkbox" /> Italy (5)</label>
+        <label className="checkbox-label"><input type="checkbox" /> United States Of America (3)</label>
+        <label className="checkbox-label"><input type="checkbox" /> Germany (4)</label>
+        <label className="checkbox-label"><input type="checkbox" /> Spain (4)</label>
+        <label className="checkbox-label"><input type="checkbox" /> Hong Kong (4)</label>
+        <label className="checkbox-label"><input type="checkbox" />Ireland (2)</label>
+        <label className="checkbox-label"><input type="checkbox" /> Netherlands (5) </label>
+        <label className="checkbox-label"><input type="checkbox" />Sweden (1)</label>
         {/* Add more vehicle types here */}
       </div>
-
       {/* Repeat the above structure for the other columns */}
-    </div>
-
-    <div className="row">
+    {/* </div> */}
+    {/* <div className="row"> */}
       <div className="column">
         <div className="heading">Auction site</div>
-    
-        <label><input type="checkbox" /> Auction site 01</label><br />
-        <label><input type="checkbox" /> Auction site 02</label><br />
-        <label><input type="checkbox" /> Auction site 03</label><br />
+        <label className="checkbox-label"><input type="checkbox" /> Auction site 01</label>
+        <label className="checkbox-label"><input type="checkbox" /> Auction site 02</label>
+        <label className="checkbox-label"><input type="checkbox" /> Auction site 03</label><br />
         {/* Add more vehicle types here */}
       </div>
-
       {/* Repeat the above structure for the other columns */}
-    </div>
-
-  
+    {/* </div> */}
+  </div>
 </div>
-
-
-
       )}
     </div>
 

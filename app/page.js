@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Header from './src/components/Header'
 import CallBanner from './src/components/CallBanner'
 import Abc from './src/components/Slider'
+import Listing from './src/components/Listing'
 export default function Home() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function Home() {
      <Header/> 
      <CallBanner/>
     {/* <Abc/>  */}
-    
+    {/* <Listing/> */}
         </div>
     </>
   )

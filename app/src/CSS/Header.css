@@ -327,6 +327,33 @@ color: #565656;
     padding: 48px 30px 15px 33px;
 }
 
+.filterboc {
+  background-color: white;
+  margin-top: -22%;
+  margin-left: 2%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 1px 8px 0px #00000020;
+  border-radius: 10px;
+  column-gap: 93px;
+    padding: 48px 30px 15px 33px;
+}
+.row {
+  display: flex; /* Use flexbox to align items */
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add some space between each checkbox and label */
+}
+
 .flex-list {
   display: flex;
   gap: 120px;

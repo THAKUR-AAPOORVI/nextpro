@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../components/swiper.css'
+import '../CSS/swiper.css'
 // import required modules
 // import { Pagination } from 'swiper/modules';
 import { images } from '../../../next.config';

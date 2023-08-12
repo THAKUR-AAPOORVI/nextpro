@@ -597,8 +597,10 @@ height: 72px;
 /* coming soon cs  */
 
 .comesoon{
-  text-align: center;
   padding-top: 18px;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 

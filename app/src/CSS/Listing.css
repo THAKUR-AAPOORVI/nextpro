@@ -1,0 +1,83 @@
+section{
+
+    background-image:url('../../../public/asset/headeroval.png');
+
+    background-size: cover; /* Adjust this as needed */
+    background-position: center; /* Adjust this as needed */
+height: 740px;}
+.mainrowarea{
+    display:flex;
+    justify-content: space-around;
+}
+.coverarea{
+    padding-top: 56px;
+}
+.icimage{
+    display: flex;
+    justify-content: space-between !important;
+}
+.imgpart{
+    /* margin-right: 2%; */
+}
+.mer{
+    margin-inline: 34px;
+}
+.previouscar{
+
+    display: flex;
+    justify-content: center;
+}
+.cls{
+    color: #E8DECF;
+    padding-top: 10px;
+}
+.closebutton{
+    display: flex;
+    justify-content: center;
+}
+.closeimage{
+    display: block;
+}
+
+.headingarea h1{
+    color: #E8DECF;
+    font-family: Fira Sans;
+font-size: 60px;
+font-weight: 400;
+line-height: 72px;
+letter-spacing: -0.5px;
+text-align: center;
+
+
+}
+.headingarea h4{
+    font-family: Founders Grotesk;
+font-size: 24px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0px;
+text-align: center;
+color: #969696;
+width: 600px;
+}
+.containerbox{
+    margin-top: 5%;
+}
+.heading4{
+    display: flex;
+    justify-content: center;
+    /* width: 600px; */
+    align-items: center;
+}
+.cellpart{
+    border-radius: 50px;
+    background-color: white;
+    width: 800px;
+    height: 90px;
+}
+.conbox{
+    justify-content: center;
+    padding: 0 22%;
+    margin-top: 8%;
+
+}
