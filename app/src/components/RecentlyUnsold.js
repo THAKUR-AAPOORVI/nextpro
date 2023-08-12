@@ -25,7 +25,7 @@ const RecentlyUnsold = ({ imageUrl, title, EndTime, status,CurrentPrice, numberO
                             <span style={{color:'#f0f0f0'}}>|</span>
                             <div className='col-4 currentbid'>
                                 <p>CURRENT BID</p>
-                                <p className='rupess'>€ {CurrentPrice}</p>
+                                <p className='rupess'>£ {CurrentPrice}</p>
                             </div>
                             <span style={{color:'#f0f0f0'}}>|</span>
                             <div className='col-4'>

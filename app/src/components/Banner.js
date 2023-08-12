@@ -29,7 +29,7 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                             <span style={{color:"#E3E3E3"}}>|</span>
                             <div className='col-4 currentbid'>
                                 <p className='currentsbids'>CURRENT BID</p>
-                                <p className='rupess'>€ {CurrentPrice}</p>
+                                <p className='rupess'>£ {CurrentPrice}</p>
                             </div>
                                  <span style={{color:"#E3E3E3"}}>|</span>
                             <div className='col-4'>
