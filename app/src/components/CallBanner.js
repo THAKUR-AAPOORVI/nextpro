@@ -622,7 +622,7 @@ const CallBanner = () => {
 
                 <Swiper
                     slidesPerView={3}
-                    spaceBetween={-2}
+                   spaceBetween={30}
                     pagination={{
                         clickable: true,
                     }}
@@ -684,7 +684,7 @@ const CallBanner = () => {
 
             <Swiper
                 slidesPerView={3}
-                spaceBetween={-2}
+               spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}
@@ -727,7 +727,7 @@ const CallBanner = () => {
 
             <Swiper
                 slidesPerView={3}
-                spaceBetween={-2}
+                spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}
@@ -769,7 +769,7 @@ const CallBanner = () => {
 
             <Swiper
                 slidesPerView={3}
-                spaceBetween={-2}
+                spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}

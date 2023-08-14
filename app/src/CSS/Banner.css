@@ -1,14 +1,16 @@
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
 
 
 .cardsection {
 
-
-  padding: 0px 20px;
+ padding: 0px 0px; 
   margin-top: 10px;
 }
 
+.cardimg{
+  width: 100% !important;
+}
 .cardText {
   color: white;
 }
@@ -347,7 +349,8 @@
 
 .slider-container {
   display: flex;
-  margin-top: 2%;
+  margin-top: 55px;
+
   /* ... other styles ... */
 }
 
@@ -691,9 +694,7 @@ input[type=checkbox] {
   }
 }
 
-.btn{
-  color:red
-}
+
 /* Adjust styles for screens up to 480px width */
 @media (max-width: 480px) {
   .newsletter-container {
@@ -771,3 +772,281 @@ input[type=checkbox] {
   
     padding: 48px 30px 15px 33px;
   }
+  /* filterbox css */
+
+/* ... your existing CSS ... */
+/* Default styles */
+.filterboc {
+
+  background-color: white;
+  /* margin-top: -22%; */
+  margin-left: 5%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  box-shadow: 0px 1px 8px 0px #00000020;
+  border-radius: 10px;
+  column-gap: 93px;
+  
+  
+    padding: 48px 30px 15px 33px;
+  }
+  
+  
+  .row {
+  display: flex; /* Use flexbox to align items */
+  flex-wrap: wrap;
+  }
+  .column {
+  display: flex;
+  /* flex-direction: column; */
+  }
+  .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add some space between each checkbox and label */
+  }
+  
+  .flex-list {
+  display: flex;
+  gap: 120px;
+  margin-top: 5%;
+  }
+  
+  
+  
+  li{
+  color: #000000;
+  /* font-family: Founders Grotesk; */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+  }
+  
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  }
+  
+  footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  }
+  
+  .section {
+  /* width: calc(33.33% - 20px);  */
+  margin-bottom: 20px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  background-color: white;
+  box-sizing: border-box;
+  }
+  
+  h2 {
+  margin-bottom: 10px;
+  }
+  
+  .checkbox-list {
+  list-style: none;
+  padding: 0;
+  }
+  
+  .checkbox-list li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  }
+  
+  /* .checkbox-list input[type="checkbox"] {
+  margin-right: 10px;
+  background-color: black;
+  } */
+  
+  .checkbox-list label {
+  cursor: pointer;
+  }
+  label{
+  font-size: 11px;
+  }
+  
+  /* Style the checkboxes */
+  
+  
+  
+  
+    /* Style the labels */
+    /* .checkbox-list label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+    } */
+  
+  
+  /* next  */
+  
+  
+  
+  
+  input[type="checkbox"]::before {
+    background-color:  #ec9017 !important;
+    color: white;
+  }
+  
+  
+  
+  
+  /* Media Queries for Responsive Layout */
+  @media (max-width: 768px) {
+  footer {
+      justify-content: center;
+  }
+  .filterboc {
+    margin-top: -10%;
+    height: auto;
+  }
+  
+  .flex-listt h4 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section {
+      width: calc(50% - 20px);
+  }
+  
+  .search-container {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    width: 100%; /* Expand to full width */
+    padding: 0 10px; /* Add some padding to the sides */
+  }
+  
+  .searchBar {
+    width: 60%;
+    margin-top: 10px; /* Add some spacing between input and image */
+  }
+  
+  .searchig {
+    margin-top: 10px; /* Add some spacing between input and image */
+    text-align: left;
+  }
+  
+  
+  }
+  
+  
+  
+  @media (max-width: 480px) {
+  .section {
+      width: 100%;
+  }
+  }
+
+
+  /* mediaquery for filter scrrens  */
+
+  /* Your default styles for all screen sizes */
+
+/* Media Query for screens up to 1200px */
+@media (max-width: 1200px) {
+
+  .mainfilterbox {
+    padding-right: 5%; /* Adjust the padding value */
+    margin-top: 1%; /* Adjust the margin-top value */
+  }
+  .filterboc {
+    margin-left: 3%; /* Adjust the margin-left value */
+    height: 480px; /* Adjust the height value */
+    column-gap: 60px; /* Adjust the column-gap value */
+  }
+  .columnpart {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0;
+    margin-left: 99px;
+}
+
+}
+
+/* Media Query for screens up to 992px */
+@media (max-width: 992px) {
+  .mainfilterbox {
+    padding-right: 5%; /* Adjust the padding value */
+    margin-top: 1%; /* Adjust the margin-top value */
+  }
+  .mainfilterbox {
+    padding-right: 0;
+    margin-top: 1%;
+    width: 100%;
+    height: 500px;
+}
+.filterboc {
+  margin-left: 11%;
+  height: 480px;
+  -moz-column-gap: 60px;
+  /* column-gap: 60px; */
+}
+.columnpart {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0;
+  margin-left: 0px;
+}
+.btnpart {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+}
+
+/* Media Query for screens up to 768px */
+@media (max-width: 768px) {
+  .mainfilterbox {
+    padding-right: 0;
+    margin-top: 12%;
+    width: 82%;
+    height: auto;
+}
+  .filterboc {
+    /* margin-left: 11%; */
+    height: 500px;
+    -moz-column-gap: 60px;
+    /* column-gap: 60px; */
+}
+.filtheading {
+  font-size: 10px;
+  color: #000;
+  font-weight: 500;
+  text-align: start;
+}
+.columnpart {
+  /* flex-direction: column; */
+  gap: 10px; /* Adjust the gap value */
+  margin-left: 10px; /* Adjust the margin-left value */
+}
+}
+
+/* Media Query for screens up to 575px */
+@media (max-width: 575px) {
+  /* Your CSS adjustments for screens up to 575px width */
+}
+
+/* Media Query for screens up to 420px */
+@media (max-width: 420px) {
+  /* Your CSS adjustments for screens up to 420px width */
+}
+
+/* Media Query for screens up to 350px */
+@media (max-width: 350px) {
+  /* Your CSS adjustments for screens up to 350px width */
+}

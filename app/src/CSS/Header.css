@@ -225,7 +225,9 @@ input::placeholder {
   justify-content: space-between;
   align-items: center;
   padding: 0 32px;
-  margin-top: -23%;
+
+  margin-top: -25%;
+
   position: relative;
 }
 .recent_main{
@@ -311,182 +313,12 @@ margin-inline: 10px
   padding: 0px 51px;
 color: #565656;
 } */
-/* filterbox css */
-
-/* ... your existing CSS ... */
-/* Default styles */
-.filterboc {
-
-background-color: white;
-/* margin-top: -22%; */
-margin-left: 5%;
-height: 540px;
-display: flex;
-justify-content: center;
-/* align-items: center; */
-text-align: center;
-box-shadow: 0px 1px 8px 0px #00000020;
-border-radius: 10px;
-column-gap: 93px;
-
-
-  padding: 48px 30px 15px 33px;
-}
-
-
-.row {
-display: flex; /* Use flexbox to align items */
-flex-wrap: wrap;
-}
-.column {
-display: flex;
-/* flex-direction: column; */
-}
-.checkbox-label {
-display: flex;
-align-items: center;
-margin-right: 10px; /* Add some space between each checkbox and label */
-}
-
-.flex-list {
-display: flex;
-gap: 120px;
-margin-top: 5%;
-}
-
-
-
-li{
-color: #000000;
-/* font-family: Founders Grotesk; */
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-letter-spacing: 0px;
-text-align: left;
-
-}
-
-body {
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-}
-
-footer {
-background-color: #f4f4f4;
-padding: 20px;
-display: flex;
-justify-content: space-around;
-align-items: flex-start;
-flex-wrap: wrap;
-}
-
-.section {
-/* width: calc(33.33% - 20px);  */
-margin-bottom: 20px;
-padding: 10px;
-/* border: 1px solid #ccc; */
-background-color: white;
-box-sizing: border-box;
-}
-
-h2 {
-margin-bottom: 10px;
-}
-
-.checkbox-list {
-list-style: none;
-padding: 0;
-}
-
-.checkbox-list li {
-margin: 5px 0;
-display: flex;
-align-items: center;
-}
-
-/* .checkbox-list input[type="checkbox"] {
-margin-right: 10px;
-background-color: black;
-} */
-
-.checkbox-list label {
-cursor: pointer;
-}
-label{
-font-size: 11px;
-}
-
-/* Style the checkboxes */
 
 
 
 
-  /* Style the labels */
-  /* .checkbox-list label {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-  } */
-
-
-/* next  */
 
 
 
 
-input[type="checkbox"]::before {
-  background-color:  #ec9017 !important;
-  color: white;
-}
 
-
-
-
-/* Media Queries for Responsive Layout */
-@media (max-width: 768px) {
-footer {
-    justify-content: center;
-}
-.filterboc {
-  margin-top: -10%;
-  height: auto;
-}
-
-.flex-listt h4 {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.section {
-    width: calc(50% - 20px);
-}
-
-.search-container {
-  /* flex-direction: column; */
-  align-items: flex-start;
-  width: 100%; /* Expand to full width */
-  padding: 0 10px; /* Add some padding to the sides */
-}
-
-.searchBar {
-  width: 60%;
-  margin-top: 10px; /* Add some spacing between input and image */
-}
-
-.searchig {
-  margin-top: 10px; /* Add some spacing between input and image */
-  text-align: left;
-}
-
-
-}
-
-
-
-@media (max-width: 480px) {
-.section {
-    width: 100%;
-}
-}

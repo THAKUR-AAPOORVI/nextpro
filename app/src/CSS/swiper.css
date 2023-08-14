@@ -33,3 +33,7 @@
     box-sizing: content-box;
     /* margin-top: -20%; */
 }
+.slider-container {
+    display: flex;
+    margin-top: 28px;
+}
