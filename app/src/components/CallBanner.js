@@ -1,6 +1,7 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Banner from './Banner';
+import '../Css/Header.css'
 
 import Recentlysold from './Recentlysold'
 import RecentlyUnsold from './RecentlyUnsold'
@@ -175,7 +176,7 @@ const solddata = [
         "lhdOrRhdDrive": "LHD",
         "numberOfMiles": 1500,
         "countryIconImage": "https://example.com/flags/china.png"
-    },  {
+    }, {
         "image": "../asset/Bitmap (1).png",
         "soldPrice": "270000",
         "numberOfBids": 5,
@@ -440,52 +441,217 @@ const soonData = [
 const CallBanner = () => {
 
 
+    const [showContainer, setShowContainer] = useState(false);
+
+    const toggleContainer = () => {
+        setShowContainer(!showContainer);
+    };
     
-    
+    const handleFilterSubmit = () => {
+        // Perform your filtering logic here
+        
+        // Close the filter container
+        setShowContainer(false);
+    };
+
     return (
         <>
 
+            <div className='containerss'>
+                <div className='row view-row'>
+                    <div className='action'>
+                        <h1>Live Auctions (45)</h1>
+                    </div>
+                    <div className='buttonbox'>
+
+                        <h1>View all </h1>
+
+                    </div>
+                    <div className='arrow'>
+                        <span><img src='../asset/btnarrow.png'></img></span>
+                    </div>
+                </div>
+
+                <div >
+                    <div className='filterpart'>
+                        <div className='filterside'>
+                            <h1 >Filter results</h1>
+                        </div>
+                        <div className='filterimg'>
+                            <span><img onClick={toggleContainer} src='../asset/filterimg.png'></img></span>
+                        </div>
 
 
 
- {/* <div className='cardsmove'> */}
-       <div
-        className='slider-container'
-   
-      > 
+                        <div className='filterside'>
+                            <h1 >View by</h1>
 
-  <Swiper
-            slidesPerView={3}
-            spaceBetween={-2} 
-            pagination={{
-              clickable: true,
-            }}
-            // modules={[Pagination]}
-            className="mySwiper"
-          >
-           
-        {data.map((item, index) => (
-      <SwiperSlide className={SwiperSlide}>
-          <Banner
-            key={index}
-            imageUrl={item.image}
-            EndTime={item.endTime}
-            CurrentPrice={item.currentBidPrice}
-            numberOfBids={item.numberOfBids}
-            title={item.title}
-            description={item.subheading}
-            driveMode={item.lhdOrRhdDrive}
-            numberOfMiles={item.numberOfMiles}
-          />
-        </SwiperSlide>
-        ))}
-         
-    </Swiper>
-      {/* </div> */}
+                        </div>
+                        <div className='filterimg'>
+                            <span><img src='../asset/Group 12.png'></img></span>
+                        </div>
+                        <div className='filterside'></div>
+                        <div className='filterimg'>
+                            <span><img src='../asset/btn view.png'></img></span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div className='mainfilterbox'>
+                {/* <button onClick={toggleContainer}>Filter</button> */}
+                {showContainer && (
+                    <div className="container filterboc">
+
+
+                        <div className="rowfilter">
+                            <div className="columnpart">
+
+
+                                <div class="section">
+                                    <h2 className='filtheading'>Vehicle</h2>
+                                    <ul class="checkbox-list">
+                                        <li><input type="checkbox" id="item1" /><label for="item1">Car</label></li>
+                                        <li><input type="checkbox" id="item2" /><label for="item2">Bike</label></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="section">
+                                <h2 className='filtheading'>Manufacturer</h2>
+                                    <ul class="checkbox-list">
+                                        
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Porsche (20)</label></li>
+                                        <li><input type="checkbox" id="item4" /><label for="item4">Ferrari (9)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Bmw (7)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Fiat (6)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Mercedes-Benz (12)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Lamborghini (5)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Jaguar (3)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Lancia (3)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Audi (2)</label></li>
+
+                                    </ul>
+                                    <div className='viewall'>
+                                        <img src='./asset/viewall.png'></img>
+                                        </div>
+                                </div>
+
+                                <div class="section">
+                                <h2 className='filtheading'>Auction status</h2>
+                                    <ul class="checkbox-list">
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Live</label></li>
+                                        <li><input type="checkbox" id="item4" /><label for="item4">Comming soon</label></li>
+                                        <li><input type="checkbox" id="item4" /><label for="item4">Sold</label></li>
+                                        <li><input type="checkbox" id="item4" /><label for="item4">Unsold</label></li>
+                                        <li><input type="checkbox" id="item4" /><label for="item4">About to go</label></li>
+
+                                    </ul>
+                                </div>
+                                <div class="section">
+                                <h2 className='filtheading'>Seller type</h2>
+                                    <ul class="checkbox-list">
+                                    <li><input type="checkbox" id="item3" /><label for="item3">Private (4)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Trade (8)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Managed (4)</label></li>
+
+                                    </ul>
+                                </div>
+                                <div class="section">
+                                <h2 className='filtheading'>Location</h2>
+                                    <ul class="checkbox-list">
+                                    <li><input type="checkbox" id="item3" /><label for="item3">United Kingdom (20)</label></li>
+                                        <li><input type="checkbox" id="item4" /><label for="item4">Australia (9)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Italy (7)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Germany (6)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Spain (12)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Hongkong (5)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Ireland (3)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Netherlands (3)</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Sweden (2)</label></li>
+
+
+                                    </ul>
+                                    <div className='viewall'>
+                                        <img src='./asset/viewall.png'></img>
+                                        </div>
+                                </div>
+                                <div class="section">
+                                <h2 className='filtheading'>Auction site</h2>
+                                    <ul class="checkbox-list">
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Auction site 01</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Auction site 02</label></li>
+                                        <li><input type="checkbox" id="item3" /><label for="item3">Auction site 03</label></li>
+                                      
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+
+<div className='btnpart'>
+
+    <div className='divpart' onClick={handleFilterSubmit}>
+        <img src='./asset/submitbtn.png'></img>
     </div>
+    </div>
+         
+                        </div>
 
- 
-   
+                    </div>
+                    
+                )}
+
+
+            </div>
+
+
+
+            {/* <div className='cardsmove'> */}
+            <div
+                className='slider-container'
+
+            >
+
+                <Swiper
+                    slidesPerView={3}
+                    spaceBetween={-2}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    // modules={[Pagination]}
+                    className="mySwiper"
+                >
+
+                    {data.map((item, index) => (
+                        <SwiperSlide className={SwiperSlide}>
+                            <Banner
+                                key={index}
+                                imageUrl={item.image}
+                                EndTime={item.endTime}
+                                CurrentPrice={item.currentBidPrice}
+                                numberOfBids={item.numberOfBids}
+                                title={item.title}
+                                description={item.subheading}
+                                driveMode={item.lhdOrRhdDrive}
+                                numberOfMiles={item.numberOfMiles}
+                            />
+                        </SwiperSlide>
+                    ))}
+
+                </Swiper>
+                {/* </div> */}
+            </div>
+
+
+
             <div className='row view-row recent_main'>
                 <div className='action'>
                     <h1 className='recent'>Recently sold (32) </h1>
@@ -500,7 +666,7 @@ const CallBanner = () => {
                 </div>
             </div>
 
-           {/* <div className='scroller' >
+            {/* <div className='scroller' >
                 {solddata.map((item, index) => (
                     <Recentlysold
                         key={index}
@@ -516,33 +682,33 @@ const CallBanner = () => {
                 ))}
             </div> */}
 
-<Swiper
-        slidesPerView={3}
-                    spaceBetween={-2} 
-        pagination={{
-          clickable: true,
-        }}
-        // modules={[Pagination]}
-        className="mySwiper"
-      >
-       
-        {solddata.map((item, index) => (
-             <SwiperSlide className={SwiperSlide}>
-                    <Recentlysold
-                        key={index}
-                        imageUrl={item.image} // Use the actual property from your data object
-                        soldPrice={item.soldPrice}
-                        CurrentPrice={item.currentBidPrice}
-                        numberOfBids={item.numberOfBids}
-                        title={item.title} // Use the actual property from your data object
-                        description={item.subheading} // Use the actual property from your data object
-                        driveMode={item.lhdOrRhdDrive}
-                        numberOfMiles={item.numberOfMiles}
-                    />
-                        </SwiperSlide>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={-2}
+                pagination={{
+                    clickable: true,
+                }}
+                // modules={[Pagination]}
+                className="mySwiper"
+            >
+
+                {solddata.map((item, index) => (
+                    <SwiperSlide className={SwiperSlide}>
+                        <Recentlysold
+                            key={index}
+                            imageUrl={item.image} // Use the actual property from your data object
+                            soldPrice={item.soldPrice}
+                            CurrentPrice={item.currentBidPrice}
+                            numberOfBids={item.numberOfBids}
+                            title={item.title} // Use the actual property from your data object
+                            description={item.subheading} // Use the actual property from your data object
+                            driveMode={item.lhdOrRhdDrive}
+                            numberOfMiles={item.numberOfMiles}
+                        />
+                    </SwiperSlide>
                 ))}
-    
-        </Swiper>
+
+            </Swiper>
 
 
             <div className='row view-row recent_main'>
@@ -560,31 +726,31 @@ const CallBanner = () => {
             </div>
 
             <Swiper
-            slidesPerView={3}
-                        spaceBetween={-2}  
-            pagination={{
-              clickable: true,
-            }}
-            // modules={[Pagination]}
-            className="mySwiper"
-          >
-            <div className='scroller' >
-                {unsolddata.map((item, index) => (
-                     <SwiperSlide className={SwiperSlide}>
-                    <RecentlyUnsold
-                        key={index}
-                        imageUrl={item.image} // Use the actual property from your data object
-                        status={item.status}
-                        CurrentPrice={item.currentBidPrice}
-                        numberOfBids={item.numberOfBids}
-                        title={item.title} // Use the actual property from your data object
-                        description={item.subheading} // Use the actual property from your data object
-                        driveMode={item.lhdOrRhdDrive}
-                        numberOfMiles={item.numberOfMiles}
-                    />
-                    </SwiperSlide>
-                ))}
-            </div>
+                slidesPerView={3}
+                spaceBetween={-2}
+                pagination={{
+                    clickable: true,
+                }}
+                // modules={[Pagination]}
+                className="mySwiper"
+            >
+                <div className='scroller' >
+                    {unsolddata.map((item, index) => (
+                        <SwiperSlide className={SwiperSlide}>
+                            <RecentlyUnsold
+                                key={index}
+                                imageUrl={item.image} // Use the actual property from your data object
+                                status={item.status}
+                                CurrentPrice={item.currentBidPrice}
+                                numberOfBids={item.numberOfBids}
+                                title={item.title} // Use the actual property from your data object
+                                description={item.subheading} // Use the actual property from your data object
+                                driveMode={item.lhdOrRhdDrive}
+                                numberOfMiles={item.numberOfMiles}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </div>
             </Swiper>
 
             <div className='row view-row recent_main'>
@@ -602,31 +768,31 @@ const CallBanner = () => {
             </div>
 
             <Swiper
-            slidesPerView={3}
-                        spaceBetween={-2}  
-            pagination={{
-              clickable: true,
-            }}
-            // modules={[Pagination]}
-            className="mySwiper"
-          >
-            <div className='scroller' >
-                {soonData.map((item, index) => (
-                          <SwiperSlide className={SwiperSlide}>
-                    <CommingSoon
-                        key={index}
-                        imageUrl={item.image} // Use the actual property from your data object
-                        arriveDate={item.arriveDate}
-                        // CurrentPrice={item.currentBidPrice}
-                        // numberOfBids={item.numberOfBids}
-                        title={item.title} // Use the actual property from your data object
-                        description={item.subheading} // Use the actual property from your data object
-                        driveMode={item.lhdOrRhdDrive}
-                        numberOfMiles={item.numberOfMiles}
-                    />
-                    </SwiperSlide>
-                ))}
-            </div>
+                slidesPerView={3}
+                spaceBetween={-2}
+                pagination={{
+                    clickable: true,
+                }}
+                // modules={[Pagination]}
+                className="mySwiper"
+            >
+                <div className='scroller' >
+                    {soonData.map((item, index) => (
+                        <SwiperSlide className={SwiperSlide}>
+                            <CommingSoon
+                                key={index}
+                                imageUrl={item.image} // Use the actual property from your data object
+                                arriveDate={item.arriveDate}
+                                // CurrentPrice={item.currentBidPrice}
+                                // numberOfBids={item.numberOfBids}
+                                title={item.title} // Use the actual property from your data object
+                                description={item.subheading} // Use the actual property from your data object
+                                driveMode={item.lhdOrRhdDrive}
+                                numberOfMiles={item.numberOfMiles}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </div>
             </Swiper>
 
             {/* <div className='row view-row'>
@@ -686,7 +852,7 @@ const CallBanner = () => {
                     <div class="content">
                         <h2 class="signuptxt">Signup to Our <span class="newsletter">newsletter</span></h2>
                         <div class="p-container">
-                            <p class="industry">Industry insight straight to your inbox. We’ll provide you with key information to help you determine whether and how much to bid.</p>
+                            <h5 class="industry">Industry insight straight to your inbox. We’ll provide you with key information to help you determine whether and how much to bid.</h5>
                         </div>
                         <div class="input-row">
                             <input type="text" placeholder="" />

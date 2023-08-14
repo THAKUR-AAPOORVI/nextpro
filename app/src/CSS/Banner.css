@@ -1,548 +1,552 @@
 
-.cardsection{
-  
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
+
+.cardsection {
+
 
   padding: 0px 20px;
   margin-top: 10px;
 }
+
 .cardText {
-    color: white;
-  }
-  .recent{
-    color: #000;
-  }
-  .recent_main{
+  color: white;
+}
+
+.recent {
+  color: #000;
+}
+
+.recent_main {
   margin-top: 20px;
   margin-bottom: 20px;
-  }
-  .card {
-    /* width: 340px;
+}
+
+.card {
+  /* width: 340px;
     height: 360px; */
-    /* z-index: 2;  */
-    box-shadow: 0px 1px 8px 0px #00000020;
-  
-    margin-bottom: 2%;
-    /* margin-right: 2%; */
-    background-color: 
+  /* z-index: 2;  */
+  box-shadow: 0px 1px 8px 0px #00000020;
+
+  margin-bottom: 2%;
+  /* margin-right: 2%; */
+  background-color:
     #FFFFFF;
-  }
-  
-  .card-image {
-    /* width: 411px;
+}
+
+.card-image {
+  /* width: 411px;
   height: 231.1875px;
   top: 0.125px; */
-    width: 100%;
-    /* height: 180.1875px; */
-  
-  }
-  
-  .card-content {
-    background: white;
-    color: black;
-  }
-  
-  /* .card-description {
+  width: 100%;
+  /* height: 180.1875px; */
+
+}
+
+.card-content {
+  background: white;
+  color: black;
+}
+
+/* .card-description {
     color: grey;
     padding: 0 31px;
   } */
-  
-  /* card pill css  */
-  
-  .pill-text {
-    display: flex;
-    padding: 10px 45PX 5PX 39PX;
-    /* align-content: center; */
-    /* flex-wrap: wrap; */
-    justify-content:space-between;
-    align-items: center;
-    padding-top: 10px;
-  
-  }
-  
-  .para-text {
-    font-family: Founders Grotesk;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-    color:
-      #969696;
-  }
-  
+
+/* card pill css  */
+
+.pill-text {
+  display: flex;
+  padding: 10px 45PX 5PX 39PX;
+  /* align-content: center; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
+}
+
+.para-text {
+  font-family: Founders Grotesk;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color:
+    #969696;
+}
 
 
-  .radiopill{
-    padding: 0px 17px;
-    margin-top: -9%;
 
-  }
-  /* 
+.radiopill {
+  padding: 0px 17px;
+  margin-top: -9%;
+
+}
+
+/* 
   .pill-text{ display: flex;
       justify-content: space-between;} */
-  /* padding: 10px 19px 4px 20} */
-  
-  /* check   */
-  .main-pill {
-    /* border-radius: 50px;
+/* padding: 10px 19px 4px 20} */
+
+/* check   */
+.main-pill {
+  /* border-radius: 50px;
     width: 290px;
   height: 67px;
   position: absolute;
   margin-top: -6%;
   background-color: white;
   height: 67px;box-shadow: 0px 0px 10px 0px #0000001A; */
-  
-    border-radius: 50px;
-    /* width: 290px;
+
+  border-radius: 50px;
+  /* width: 290px;
     margin-left: 8%; */
-    height: 67px;
-    position: sticky;
-    top: 0;
-    /* Adjust this value as needed to make it stick at the desired position */
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px #0000001A;
-  
-  }
-  
-  /* last row   */
-  
-  .lastrow {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    align-self: center;
-    justify-self: center;
-    padding: 0 12px 28px 8px;
-    margin-bottom: 5%;
-    MARGIN-TOP: 12%;
-  }
-  
-  .TITLE-DESC {
-    MARGIN-TOP: 9PX;
-  }
-  
-  .TITLE-DESC h2 {
-    /* padding-top: 30px; */
-  }
-  
-  /* last row   */
-  .lastcol {
-    display: flex;
-  }
-  
-  .wheelimg {
-    display: flex;
-    margin-left: 14px;
-  }
-  
-  .time {
-    font-family: Founders Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-    color:
-      #DB1B1B;
-    width: 54px;
-    height: 19px;
-    top: 30px;
-    left: 31px;
-  
-  }
-  
-  .currentbid {
-    /* width: 77px;
+  height: 67px;
+  position: sticky;
+  top: 0;
+  /* Adjust this value as needed to make it stick at the desired position */
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px #0000001A;
+
+}
+
+/* last row   */
+
+.lastrow {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  padding: 0 12px 28px 8px;
+  margin-bottom: 5%;
+  MARGIN-TOP: 12%;
+}
+
+.TITLE-DESC {
+  MARGIN-TOP: 9PX;
+}
+
+.TITLE-DESC h2 {
+  /* padding-top: 30px; */
+}
+
+/* last row   */
+.lastcol {
+  display: flex;
+}
+
+.wheelimg {
+  display: flex;
+  margin-left: 14px;
+}
+
+.time {
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color:
+    #DB1B1B;
+  width: 54px;
+  height: 19px;
+  top: 30px;
+  left: 31px;
+
+}
+
+.currentbid {
+  /* width: 77px;
     height: 14px; */
-    top: 16px;
-    left: 154px;
-    color: #969696;
-    font-family: Founders Grotesk;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-  
-  
-  }
-  .endstime{
-
-    font-family: Founders Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    /* line-height: 19px; */
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-    color:
-      #DB1B1B;
-    width: 63px;
-    height: 19px;
-    top: 30px;
-    left: 161px;
+  top: 16px;
+  left: 154px;
+  color: #969696;
+  font-family: Founders Grotesk;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
 
 
-  }
-  
-  .rupess {
-    font-family: Founders Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    /* line-height: 19px; */
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-    color:
-      #000000;
-    width: 63px;
-    height: 19px;
-    top: 30px;
-    left: 161px;
-  
-  }
-  
-  .bids {
-    font-family: Founders Grotesk;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-    color: #969696;
-    width: 34px;
-    height: 14px;
-    top: 16px;
-    left: 302px;
-  
-  }
-  
-  .notime {
-    font-family: Founders Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0.6000000238418579px;
-    text-align: center;
-    width: 9px;
-    height: 19px;
-    top: 30px;
-    left: 312px;
-    color:  #000000;
-    margin-left: 10px;
- 
-  
-  }
-  
-  .card-title {
-    font-family: Fira Sans;
-    font-size: 22px;
-    font-weight: 500;
-    /* line-height: 66px; */
-    letter-spacing: 1px;
-    text-align: center;
-  
-    color:
-      #000000;
-    /* width: 272px; */
-    height: 32px;
-    top: 291px;
-    left: 18.5px;
-  
-  }
+}
+
+.endstime {
+
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  /* line-height: 19px; */
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color:
+    #DB1B1B;
+  width: 63px;
+  height: 19px;
+  top: 30px;
+  left: 161px;
 
 
-  .endsin p{
+}
+
+.rupess {
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  /* line-height: 19px; */
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color:
+    #000000;
+  width: 63px;
+  height: 19px;
+  top: 30px;
+  left: 161px;
+
+}
+
+.bids {
+  font-family: Founders Grotesk;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color: #969696;
+  width: 34px;
+  height: 14px;
+  top: 16px;
+  left: 302px;
+
+}
+
+.notime {
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  width: 9px;
+  height: 19px;
+  top: 30px;
+  left: 312px;
+  color: #000000;
+  margin-left: 10px;
+
+
+}
+
+.card-title {
+  /* font-family: Fira Sans; */
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-size: 22px;
+  font-weight: 500;
+  /* line-height: 66px; */
+  letter-spacing: 1px;
+  text-align: center;
+
+  color:
+    #000000;
+  /* width: 272px; */
+  height: 32px;
+  top: 291px;
+  left: 18.5px;
+
+}
+
+
+.endsin p {
 
   color: #969696;
-  }
-  .currentsbids{
-    color: #969696;
-  }
-  .card-description {
-  
-  
-  
-  
-    /* width: 370px; */
-    /* height: 48px; */
-    top: 332px;
-    left: 18.5px;
-    font-family: Founders Grotesk;
-    font-size: 14px;
-    font-weight: 400;
-    /* margin-top: 23px; */
-    line-height: 21px;
-    padding: 0 42px;
-    letter-spacing: 0px;
-    text-align: center;
-    color:
-      #969696;
-  
-  
-  }
-  
-  .lhd {
-    width: 36px;
-    height: 14px;
-    top: 432px;
-    left: 45.5px;
-    font-family: Founders Grotesk;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0px;
-    text-align: left;
-  
-  }
-  
-  .speeds {
-  
-  
-    width: 96px;
-    height: 16px;
-    top: 2px;
-    left: 34.5px;
-    font-family: Founders Grotesk;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0px;
-    text-align: left;
-  
-  
-  }
-  
-  .speedometer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* scroller css */
+}
+
+.currentsbids {
+  color: #969696;
+}
+
+.card-description {
 
 
 
 
-
-  .cardsmove {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    flex-shrink: 0;
-    z-index: 10;
-    /* ... other styles ... */
-  }
-  
-  .slider-container {
-    display: flex;
-    margin-top: -20%;
-    /* ... other styles ... */
-  }
-  .scroller {
-    display: flex; 
-    /* margin-top: -7%;  */
-    overflow-x: auto;          /* Use flexbox layout */
-       /* Enable horizontal scrolling if content overflows */
-    overflow-y: hidden;     /* Hide vertical scrollbar */
-    flex-shrink: 0;         /* Prevent shrinking of container */
-     /* Add a right margin */
-    z-index: 10;            /* Set the z-index for stacking context */
-    /* margin-top: -100px;     Negative margin, but don't forget the unit (e.g., px) */
-  }
-  /* fotter start */
-  .newsletter-container {
-    position: relative;
-    display: flex;
-    z-index: 1; 
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
-    justify-content: center;
-    background-color: #e8decf;
-    padding: 10px; /* Adjust padding for smaller screens */
-    border-radius: 60% 60% 0 0 / 100% 100% 0 0;
-    width: 100%;
-    height: 400px;
-  
-  }
-  
-  .content {
-    text-align: center;
-    margin-top: 60px;
-  }
-  
-  h2 {
-    font-size: 35px; /* Adjust font size for smaller screens */
-    margin-bottom: 10px;
-    color:#000;
-   
-  }
-  
-  h2::first-line {
-    font-weight: 900;
-  }
-  
-  h2 span {
-    font-weight: 400;
-  }
-  
-  
-  .p-container {
-    /* Set a maximum width for the paragraph container */
-    margin: 0 auto; /* Center the container */
-    margin-bottom: 10%;
-  }
-  
-  p {
-    /* margin-bottom: 15px; */
-    /* line-height: 1.3; */
-    max-height: 2.6em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    /* color: #616160; */
-  }
-  .input-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-  
-  input {
-    border: none;
-    border-bottom: 2px solid #0E2328;
-    padding: 5px;
-    width: auto; /* Allow input width to adjust based on content */
-    max-width: 100%; /* Set a maximum width for the input fields */
-    background-color: transparent;
-    outline: none;
-    margin-right: 10px; /* Add spacing between inputs */
-  }
-  
-  /* Apply margin only to the second input */
-  .input-row input:last-child {
-    margin-right: 0;
-  }
-  
- 
-  
-  .green-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0e2328;
-    padding: 66px 0;
-    height: 400px;
-  }
-  
-  .center-image {
-    max-width: 100%; /* Make the image responsive */
-    display: block;
-    margin: 0 auto;
-  }
-  .newsletter{
-
-
-    font-family: Fira Sans;
-font-size: 60px;
-font-weight: 500;
-line-height: 72px;
-letter-spacing: -0.8687499761581421px;
-text-align: center;
-
-font-family: Fira Sans;
-font-size: 60px;
-font-weight: 500;
-line-height: 72px;
-letter-spacing: -0.8687499761581421px;
-text-align: center;
-
-  }
-  .horizontal-line {
-    width: 90%;
-    margin-top: 12%;
-    border: none;
-    border-top: 1px solid white;
-  }
-  .newslettercontainer{
-    background-image: url('/public/asset/Combined Shape.png');
-  }
-  
-
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 663px; /* You can adjust the height as needed */
-    background-image: url('../../../public/asset/imagebg.png'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black background */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  /* Media Queries for Responsive Design */
-  
-  /* Adjust styles for screens up to 768px width */
-  @media (max-width: 768px) {
-    .newsletter-container {
-      padding: 20px;
-      height: auto;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
-  
-    p {
-      margin-bottom: 10px;
-    }
-    .green-div {
-      padding: 20px 0;
-    }
-  }
-  
-  /* Adjust styles for screens up to 480px width */
-  @media (max-width: 480px) {
-    .newsletter-container {
-      padding: 15px;
-      border-radius: 0;
-    }
-  
-    .input-row {
-      flex-direction: column;
-    }
-  
-    input {
-      margin: 3px 0;
-    }
-    .horizontal-line {
-      margin-top: 8%; /* Adjust margin for smaller screens */
-    }
-  }
- 
-.industry{
+  /* width: 370px; */
+  /* height: 48px; */
+  top: 332px;
+  left: 18.5px;
   font-family: Founders Grotesk;
-  font-size: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  /* margin-top: 23px; */
+  line-height: 21px;
+  padding: 0 42px;
+  letter-spacing: 0px;
+  text-align: center;
+  color:
+    #969696;
+
+
+}
+
+.lhd {
+  width: 36px;
+  height: 14px;
+  top: 432px;
+  left: 45.5px;
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+
+.speeds {
+
+
+  width: 96px;
+  height: 16px;
+  top: 2px;
+  left: 34.5px;
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+
+
+}
+
+.speedometer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* scroller css */
+
+
+
+
+
+.cardsmove {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  z-index: 10;
+  /* ... other styles ... */
+}
+
+.slider-container {
+  display: flex;
+  margin-top: 2%;
+  /* ... other styles ... */
+}
+
+.scroller {
+  display: flex;
+  /* margin-top: -7%;  */
+  overflow-x: auto;
+  /* Use flexbox layout */
+  /* Enable horizontal scrolling if content overflows */
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  flex-shrink: 0;
+  /* Prevent shrinking of container */
+  /* Add a right margin */
+  z-index: 10;
+  /* Set the z-index for stacking context */
+  /* margin-top: -100px;     Negative margin, but don't forget the unit (e.g., px) */
+}
+
+/* fotter start */
+.newsletter-container {
+  /* position: relative; */
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  /* Stack items vertically on smaller screens */
+  align-items: center;
+  justify-content: center;
+  background-color: #e8decf;
+  padding: 10px;
+  /* Adjust padding for smaller screens */
+  border-radius: 60% 60% 0 0 / 100% 100% 0 0;
+  width: 100%;
+  height: 400px;
+
+}
+
+.content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+h2 {
+  font-size: 35px;
+  /* Adjust font size for smaller screens */
+  margin-bottom: 10px;
+  color: #000;
+
+}
+
+h2::first-line {
+  font-weight: 900;
+}
+
+h2 span {
+  font-weight: 400;
+}
+
+
+.p-container {
+  /* Set a maximum width for the paragraph container */
+  /* margin: 0 auto; Center the container */
+  margin-bottom: 5%;
+}
+
+p {
+  /* margin-bottom: 15px; */
+  /* line-height: 1.3; */
+  max-height: 2.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* color: #616160; */
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input {
+
+  border: none;
+  border-bottom: 2px solid #0E2328;
+  padding: 5px 7px; /* Adjust the horizontal padding here */
+  width: auto;
+  max-width: 100%;
+  background-color: transparent;
+  outline: none;
+  margin-right: 10px;
+}
+
+/* Apply margin only to the second input */
+.input-row input:last-child {
+  margin-right: 0;
+}
+
+
+
+.green-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0e2328;
+  padding: 66px 0;
+  height: 400px;
+}
+
+.center-image {
+  max-width: 100%;
+  /* Make the image responsive */
+  display: block;
+  margin: 0 auto;
+}
+
+.signuptxt {
+/* 
+  font-family: Fira Sans; */
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -0.8687499761581421px;
+  text-align: center;
+}
+
+.newsletter {
+
+  font-family: Fira Sans;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -0.8687499761581421px;
+  text-align: center;
+
+}
+
+.horizontal-line {
+  width: 90%;
+  margin-top: 12%;
+  border: none;
+  border-top: 1px solid white;
+}
+
+.newslettercontainer {
+  background-image: url('/public/asset/Combined Shape.png');
+}
+
+
+.image-container {
+  /* position: relative; */
+  margin-top: -8%;
+  width: 100%;
+  height: 663px;
+  /* You can adjust the height as needed */
+  background-image: url('../../../public/asset/imagebg.png');
+  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black background */
+
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+
+.industry {
+  font-family: Founders Grotesk;
+  font-size: 18px;
   font-weight: 400;
   line-height: 33px;
   letter-spacing: 0px;
   text-align: center;
   width: 627px;
-  height: 72px;
+  max-width: 100%;
+  /* Ensure the width doesn't exceed the parent width */
   top: 107px;
   left: 143px;
   padding: 0 50px;
-      
+  color: #98948e;
+  display: block;
+  margin: auto;
+  /* Center the element */
+  white-space: normal;
+  /* Allow text to wrap */
+
 }
 
 
@@ -551,17 +555,20 @@ text-align: center;
   display: flex;
   background-color: #0E2328;
   align-items: center;
-  width: 479px !important;
-  height: 54px;
-  display: flex;
   justify-content: center;
-  margin-left: 12%;
-margin-top: 7%;
+  /* Center horizontally */
+  width: 37% !important;
+  height: 54px;
+  margin-left: auto;
+  /* Center horizontally */
+  margin-right: auto;
+  /* Center horizontally */
+  margin-top: 4%;
 }
 
 .submit button {
   background-color:
-  #0E2328;
+    #0E2328;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -580,23 +587,24 @@ margin-top: 7%;
 
 /* Remove hover effect */
 .submit button.no-hover:hover {
-  background-color: 
-  #0E2328;
+  background-color:
+    #0E2328;
 }
 
-.signuptext{
+.signuptext {
   width: 939px;
-height: 72px;
+  height: 72px;
 
 }
-.cardsmove{
+
+.cardsmove {
   margin-top: -20%;
 }
 
 
 /* coming soon cs  */
 
-.comesoon{
+.comesoon {
   padding-top: 18px;
   display: flex;
   justify-content: space-around;
@@ -606,25 +614,159 @@ height: 72px;
 
 /* recentlysold   */
 
-.cardimage{
+.cardimage {
   width: 100%;
 }
-.comminsoonbid{
-  font-family: Founders Grotesk;
-font-size: 16px;
-font-weight: 500;
-line-height: 19px;
-letter-spacing: 0.6000000238418579px;
-text-align: center;
-color: 
-#000000;
+.filtheading{
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  text-align: start;
+
 }
-.comestarts{
+
+.comminsoonbid {
   font-family: Founders Grotesk;
-font-size: 12px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0.6000000238418579px;
-text-align: center;
-color: #969696;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color:
+    #000000;
 }
+
+.comestarts {
+  font-family: Founders Grotesk;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+  color: #969696;
+}
+
+label{
+  
+color: #565656;
+}
+
+/* checkbox  */
+ 
+/* Media Queries for Responsive Design */
+
+/* Adjust styles for screens up to 768px width */
+@media (max-width: 768px) {
+  .newsletter-container {
+    padding: 20px;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .green-div {
+    padding: 20px 0;
+  }
+
+  .buttonlast {
+    display: flex;
+    background-color: #0E2328;
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+    width: 37% !important;
+    height: 54px;
+    margin-left: auto;
+    /* Center horizontally */
+    margin-right: auto;
+    /* Center horizontally */
+    margin-top: 4%;
+  }
+}
+
+.btn{
+  color:red
+}
+/* Adjust styles for screens up to 480px width */
+@media (max-width: 480px) {
+  .newsletter-container {
+    padding: 15px;
+    border-radius: 0;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  input {
+    margin: 3px 0;
+  }
+
+  .horizontal-line {
+    margin-top: 8%;
+    /* Adjust margin for smaller screens */
+  }
+  .buttonlast {
+    display: flex;
+    background-color: #0E2328;
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+    width: 100% !important;
+    height: 54px;
+    margin-left: auto;
+    /* Center horizontally */
+    margin-right: auto;
+    /* Center horizontally */
+    margin-top: 4%;
+  }
+}
+
+/* viewfiltercss  */
+
+
+.columnpart{
+
+    display: flex;
+    /* flex-direction: column; */
+    gap: 70px;
+
+}
+.btnpart{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.viewall{
+  margin-top: 19%;
+}
+
+
+/* filterbox text  */
+.mainfilterbox{
+  padding-right: 9%;
+  margin-top: 2%;
+}
+.filterboc {
+
+  background-color: white;
+  /* margin-top: -22%; */
+  margin-left: 5%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  box-shadow: 0px 1px 8px 0px #00000020;
+  border-radius: 10px;
+  column-gap: 93px;
+  
+  
+    padding: 48px 30px 15px 33px;
+  }

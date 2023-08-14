@@ -19,11 +19,11 @@ const Header = () => {
 
   
 
-    const [showContainer, setShowContainer] = useState(false);
+    // const [showContainer, setShowContainer] = useState(false);
   
-    const toggleContainer = () => {
-      setShowContainer(!showContainer);
-    };
+    // const toggleContainer = () => {
+    //   setShowContainer(!showContainer);
+    // };
     return (
         <>
 
@@ -102,7 +102,7 @@ const Header = () => {
 
 
 
-    <div className='containerss'>
+    {/* <div className='containerss'>
         <div className='row view-row'>
             <div className='action'>
             <h1>Live Auctions (45)</h1>
@@ -145,7 +145,7 @@ const Header = () => {
 
 </div>
 
-    </div>
+    </div> */}
 
             </div>
 
@@ -156,44 +156,11 @@ const Header = () => {
 {/* filter components */}
 
 
-<div>
-      {/* <button onClick={toggleContainer}>Filter</button> */}
+{/* <div>
+      
       {showContainer && (
         <div className="container filterboc">
 
-{/* 
-<div className='row'>
-    <div className='col-lg-2'>
-        <ul>Vehicle</ul>
-        <li>Car</li>
-    </div>
-    <div className='col-lg-2'>
-        <ul>Vehicle</ul>
-        <li>Car</li>
-    </div>
-    <div className='col-lg-2'>
-        <ul>Vehicle</ul>
-        <li>Car</li>
-    </div>
-    <div className='col-lg-2'>
-        <ul>Vehicle</ul>
-        <li>Car</li>
-    </div>
-    <div className='col-lg-2'>
-        <ul>Vehicle</ul>
-        <li>Car</li>
-    </div>
-    <div className='col-lg-2'>
-        <ul>Vehicle</ul>
-        <li>Car</li>
-    </div>
-
-
-
-
-
-
-</div> */}
 
 <div className="row">
       <div className="column">
@@ -255,7 +222,7 @@ const Header = () => {
  </div>
 </div>
       )}
-    </div>
+    </div> */}
 
 
 
