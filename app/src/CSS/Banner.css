@@ -478,7 +478,7 @@ input {
 
 .newsletter {
 
-  font-family: Fira Sans;
+  /* font-family: Fira Sans; */
   font-size: 50px;
   font-weight: 500;
   line-height: 72px;
@@ -651,8 +651,9 @@ label{
 color: #565656;
 }
 
-/* checkbox  */
- 
+input[type=checkbox] {
+  accent-color:black !important;
+}
 /* Media Queries for Responsive Design */
 
 /* Adjust styles for screens up to 768px width */

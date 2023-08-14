@@ -233,17 +233,14 @@ input::placeholder {
   margin-bottom: 116px;
   padding: 0 86px;
 }
-.action{
+.action {
   color: #E8E8E8;
-  font-family: Fira Sans;
-  font-size: 26px;
+  /* font-family: Fira Sans; */
+  font-size: 32px;
   font-weight: 400;
   line-height: 38px;
   letter-spacing: 0px;
   text-align: left;
-  
-
-
 }
 .buttonbox{
   color: #867F73;
@@ -314,7 +311,7 @@ margin-inline: 10px
   padding: 0px 51px;
 color: #565656;
 } */
-
+/* filterbox css */
 
 /* ... your existing CSS ... */
 /* Default styles */
@@ -423,19 +420,26 @@ font-size: 11px;
 
 /* Style the checkboxes */
 
-.checkbox-list input[type="checkbox"] {
-  background-color: black;
+
+
+
+  /* Style the labels */
+  /* .checkbox-list label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  } */
+
+
+/* next  */
+
+
+
+
+input[type="checkbox"]::before {
+  background-color:  #ec9017 !important;
+  color: white;
 }
-
-.checkbox-list input[type="checkbox"]:checked {
-  background-color: black; /* Change this to your desired checked background color */
-}
-
-
-
-
-
-
 
 
 
