@@ -1120,7 +1120,7 @@ element.style {
 }
 
 /* Media Query for screens up to 768px */
-@media (min-width: 768px) and (max-width: 992px)  {
+@media (max-width: 768px)   {
   
   
   .mainfilterbox {
@@ -1230,7 +1230,7 @@ element.style {
 }
 
 /* Media Query for screens up to 575px */
-@media (min-width: 575px) and (max-width: 768px)  {
+@media (max-width: 575px)   {
   .mainfilterbox {
     padding-right: 0;
 }
@@ -1330,7 +1330,7 @@ element.style {
 }
 
 /* Media Query for screens up to 420px */
-@media (min-width: 420px) and (max-width: 574px){
+@media (max-width: 420px) {
   .buttonbox {
     font-family: Founders Grotesk;
     font-size: 14px;
@@ -1365,7 +1365,7 @@ element.style {
   justify-content: space-between;
   align-items: center;
   padding: 0 32px;
-  margin-top: -60%;
+  margin-top: -85%;
   position: relative;
 }
 .filterboc {
@@ -1427,7 +1427,7 @@ display: none;
   display: flex;
   flex-direction: column-reverse;
   margin-top: 33px;
-  margin-inline-start: 40px;
+  margin-inline-start: 2px;
 }
 .filterpart {
   display: flex;
@@ -1452,16 +1452,18 @@ display: none;
   margin-left: 36px;
 
 }
-.view-row{
-  display: flex;
-  /* justify-content: space-between; */
 
+.view-row {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 36px;
 }
-.row {
-  display: flex;
-  flex-wrap: inherit;
-}}
+}
 
+.recent_main{
+  display: flex;
+  justify-content: space-between;
+}
 element.style {
 }
 /* .search-container {
@@ -1477,6 +1479,9 @@ element.style {
 } */
 .buttonbox{
   display: flex !important;
+}
+.vnone {
+  display: none;
 }
 
 /* Media Query for screens up to 350px */
@@ -1502,23 +1507,42 @@ element.style {
   text-align: center;
   align-items: center;
   flex-wrap: inherit;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+}
+
+.container.filterboc {
+  width: 100%; /* Adjust container width */
+  padding: 10px; /* Add padding for better spacing */
+}
+
+.columnpart {
+  width: 100%; /* Adjust column width */
+  margin-bottom: 10px; /* Add margin between columns */
+}
+
+.section {
+  margin-bottom: 10px; /* Add margin between sections */
+}
+
+.checkbox-list {
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove list bullet points */
+}
+
+.checkbox-list li {
+  margin-bottom: 5px; /* Add margin between list items */
+}
+
+.checkbox-list label {
+  display: block; /* Display labels as block elements */
+}
+
+.viewall img {
+  max-width: 100%; /* Ensure images fit within their container */
+  height: auto; /* Maintain image aspect ratio */
 }
 
 
-  
-
-.buttonbox {
-    font-family: Founders Grotesk;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 13px;
-    /* text-align: right; */
-    /* width: 50px; */
-    /* height: 53px; */
-    margin-left: 64px;
-    /* margin-inline: 18px; */
-}
 .action {
   color: #E8E8E8;
   /* font-family: Fira Sans; */
@@ -1541,9 +1565,7 @@ element.style {
   display: flex;
   flex-direction: column-reverse;
   margin-top: 33px;
-  margin-inline-start: 40px
-}
-
+  margin-inline-start: -20px
 }
 .filterimg {
   height: 35px;
@@ -1555,7 +1577,32 @@ element.style {
   align-items: baseline;
   /* margin-inline: 29px; */
   margin-bottom: 21px;} 
-  .lastimg:last-child {
-    display: none; /* Hide the last image on screens with width <= 360px */
+ 
+  
+  .buttonbox{
+    display: none !important;
   }
+  
+  .mainfilterbox {
+    /* padding-right: 0; */
+    /* width: 100%; */
+    /* height: auto; */
+    height: auto;
+}
 
+.swiper {
+  margin-top: 2%;
+}
+.filterboc {
+  margin-left: 0;
+  height: 1023px;
+}
+.containerss {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  margin-top: -99%;
+  position: relative;
+}
+}

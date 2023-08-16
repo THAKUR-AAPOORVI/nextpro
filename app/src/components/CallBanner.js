@@ -17,6 +17,7 @@ import '../CSS/swiper.css'
 // import required modules
 // import { Pagination } from 'swiper/modules';
 import { images } from '../../../next.config';
+
 const data = [
     {
         "image": "../asset/Bitmap (1).png",
@@ -441,6 +442,8 @@ const soonData = [
 const CallBanner = () => {
 
 
+ 
+
     const [showContainer, setShowContainer] = useState(false);
 
     const toggleContainer = () => {
@@ -506,7 +509,7 @@ const CallBanner = () => {
             <div className='mainfilterbox'>
                 {/* <button onClick={toggleContainer}>Filter</button> */}
                 {showContainer && (
-                    <div className="container filterboc">
+                    <div className="container filterboc ">
 
 
                         <div className="rowfilter">
@@ -685,7 +688,7 @@ const CallBanner = () => {
 </div>
                 <div className='buttonbox'>
 
-                    <h1>View all </h1>
+                    <h1 className='vnone'>View all </h1>
 
                 
                 </div>
@@ -770,7 +773,7 @@ const CallBanner = () => {
                 </div> </div>
                 <div className='buttonbox'>
 
-                    <h1>View all </h1>
+                    <h1 className='vnone'>View all </h1>
 
                 </div>
                 <div className='arrow'>
@@ -835,7 +838,7 @@ const CallBanner = () => {
                 </div></div>
                 <div className='buttonbox'>
 
-                    <h1>View all </h1>
+                    <h1 className='vnone'>View all </h1>
 
                 </div>
                 <div className='arrow'>
