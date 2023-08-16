@@ -1534,7 +1534,12 @@ element.style {
 }
 
 .checkbox-list label {
-  display: block; /* Display labels as block elements */
+  display: block; 
+ 
+   
+    margin-inline: 6px;
+
+  /* Display labels as block elements */
 }
 
 .viewall img {
@@ -1567,6 +1572,11 @@ element.style {
   margin-top: 33px;
   margin-inline-start: -20px
 }
+.filterrow {
+  display: block;}
+  .lt {
+    margin-inline: 0px;
+}
 .filterimg {
   height: 35px;
   width: 35px;
@@ -1595,7 +1605,7 @@ element.style {
 }
 .filterboc {
   margin-left: 0;
-  height: 1023px;
+  height:1242px;
 }
 .containerss {
   display: block;
