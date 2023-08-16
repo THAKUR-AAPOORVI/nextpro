@@ -1,12 +1,34 @@
  
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
 
+@font-face {
+  font-family: 'Fira_sans';
+  src: url('../../../public/Fira_Sans/FiraSans-Regular.ttf');
+  /* src: url('../../../public/Fira_Sans/FiraSans-Bold.ttf'); */
+  /* font-weight: 400; */
+  font-style: normal;
+  }
+  .filterrow{
+  
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2;
+      column-gap: 50px;
+  
+  }
 
+.lastimg {
+display:  flex !important;
+}
+.sidecol{
+  display: flex;
+}
 .cardsection {
 
  padding: 0px 0px; 
   margin-top: 10px;
 }
+
 
 .cardimg{
   width: 100% !important;
@@ -247,6 +269,7 @@
 .card-title {
   /* font-family: Fira Sans; */
   /* font-family: 'Fira Sans', sans-serif; */
+  /* font-family: 'Fira_sans', sans-serif;; */
   font-size: 22px;
   font-weight: 500;
   /* line-height: 66px; */
@@ -470,8 +493,9 @@ input {
 }
 
 .signuptxt {
-/* 
+/*   font-family: 'Fira_sans'
   font-family: Fira Sans; */
+  font-family: 'Fira_sans';
   font-size: 50px;
   font-weight: 500;
   line-height: 72px;
@@ -482,6 +506,7 @@ input {
 .newsletter {
 
   /* font-family: Fira Sans; */
+  font-family: 'Fira_sans';
   font-size: 50px;
   font-weight: 500;
   line-height: 72px;
@@ -653,6 +678,11 @@ label{
   
 color: #565656;
 }
+
+
+
+
+
 
 input[type=checkbox] {
   accent-color:black !important;
@@ -905,44 +935,45 @@ input[type=checkbox] {
   
   
   
-  /* Media Queries for Responsive Layout */
-  @media (max-width: 768px) {
-  footer {
-      justify-content: center;
-  }
-  .filterboc {
-    margin-top: -10%;
-    height: auto;
-  }
-  
-  .flex-listt h4 {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .section {
-      width: calc(50% - 20px);
-  }
-  
-  .search-container {
-    /* flex-direction: column; */
-    align-items: flex-start;
-    width: 100%; /* Expand to full width */
-    padding: 0 10px; /* Add some padding to the sides */
-  }
-  
-  .searchBar {
-    width: 60%;
-    margin-top: 10px; /* Add some spacing between input and image */
-  }
-  
-  .searchig {
-    margin-top: 10px; /* Add some spacing between input and image */
-    text-align: left;
-  }
-  
-  
-  }
+    /* Media Queries for Responsive Layout */
+    @media (max-width: 768px) {
+      footer {
+          justify-content: center;
+      }
+      .filterboc {
+        margin-top: -10%;
+        height: auto;
+      }
+      
+      .flex-listt h4 {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .section {
+          width: calc(50% - 20px);
+      }
+      
+      .search-container {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        width: 100%; /* Expand to full width */
+        padding: 0 10px; /* Add some padding to the sides */
+      }
+      
+      .searchBar {
+        width: 60%;
+        margin-top: 10px; /* Add some spacing between input and image */
+      }
+      
+      .searchig {
+        margin-top: 10px; /* Add some spacing between input and image */
+        text-align: left;
+      }
+      
+      
+      }
+      
   
   
   
@@ -975,7 +1006,41 @@ input[type=checkbox] {
     gap: 0;
     margin-left: 99px;
 }
-
+.lastimg {
+  display: inline-block; /* Display the last image on smaller screens */
+}
+.lastimg:last-child {
+  display: flex;
+}
+.sidecol{
+  display: flex;
+}
+.lastimg:last-child {
+  /* display: none; */
+}
+.lastimg:last-child {
+  display: inline-block; /* Display the last image on smaller screens */
+}
+.show-last-img {
+  display: inline-block; /* Display the last image on smaller screens */
+}
+.lastimg:last-child {
+  /* display: none; */
+}
+.lastimg:last-child {
+  display: block; /* or any other appropriate display property */
+}
+.filterimg {
+  height: 35px;
+  width: 35px;
+  /* justify-content: center; */
+  /* display: flex; */
+  justify-content: center;
+  /* text-align: center; */
+  align-items: baseline;
+  /* margin-inline: 29px; */
+  margin-bottom: 21px;
+}
 }
 
 /* Media Query for screens up to 992px */
@@ -986,9 +1051,25 @@ input[type=checkbox] {
   }
   .mainfilterbox {
     padding-right: 0;
-    margin-top: 1%;
+    /* margin-top: 1%; */
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
+}
+.pill-text {
+  display: flex;
+  padding: 11px 19PX 13PX 19PX;
+  /* align-content: center; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+}
+.pilltext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0px 48px;
 }
 .filterboc {
   margin-left: 11%;
@@ -996,11 +1077,40 @@ input[type=checkbox] {
   -moz-column-gap: 60px;
   /* column-gap: 60px; */
 }
+.slider-container {
+  display: flex;
+  margin-top: 149px;
+}
+.mainfilterbox {
+  padding-right: 5%;
+  padding-right: 0;
+  margin-top: -8%;
+  width: 100%;
+  /* height: 500px; */
+}
 .columnpart {
   display: flex;
   /* flex-direction: column; */
   gap: 0;
   margin-left: 0px;
+}
+
+element.style {
+}
+.containerss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    margin-top: -25%;
+    margin-bottom: 11%;
+    position: relative;
+}
+.filterboc {
+  margin-left: 11%;
+  height: 620px;
+  -moz-column-gap: 60px;
+  /* column-gap: 60px; */
 }
 .btnpart {
   display: flex;
@@ -1010,18 +1120,87 @@ input[type=checkbox] {
 }
 
 /* Media Query for screens up to 768px */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px)  {
+  
+  
   .mainfilterbox {
     padding-right: 0;
-    margin-top: 12%;
+    margin-top: -9%;
     width: 82%;
     height: auto;
 }
-  .filterboc {
-    /* margin-left: 11%; */
-    height: 500px;
-    -moz-column-gap: 60px;
-    /* column-gap: 60px; */
+.mySwiper {
+  width: 100%; /* Adjust width for 1 slide per view */
+}
+.rowfilter {
+  margin-inline: 9%;
+}
+.lt{
+  margin-inline: 68px;
+}
+.containerss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  margin-top: -44%;
+  margin-bottom: 11%;
+  position: relative;
+}
+.card {
+  /* z-index: 2; */
+  box-shadow: 0px 1px 8px 0px #00000020;
+  margin-bottom: 2%;
+  /* margin-right: 2%; */
+  background-color: #FFFFFF;
+  width: 380px;
+}
+.card-title {
+  /* font-family: Fira Sans; */
+  /* font-family: 'Fira Sans', sans-serif; */
+
+  font-family: 'Fira_sans';
+  font-size: 17px;
+  font-weight: 500;
+  /* line-height: 66px; */
+  letter-spacing: 1px;
+  text-align: center;
+  color: #000000;
+  /* width: 272px; */
+  height: 32px;
+  top: 291px;
+  left: 18.5px;
+}
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* line-height: 0px; */
+}
+.action {
+  color: #E8E8E8;
+  /* font-family: Fira Sans; */
+  /* font-family: 'Fira_sans'; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.filterside {
+  color: #E8DECF;
+  font-family: Founders Grotesk;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-inline: 10px;
+}
+.filterboc {
+  /* margin-left: 11%; */
+  height: 778px;
+  -moz-column-gap: 60px;
+  /* column-gap: 60px; */
 }
 .filtheading {
   font-size: 10px;
@@ -1034,19 +1213,349 @@ input[type=checkbox] {
   gap: 10px; /* Adjust the gap value */
   margin-left: 10px; /* Adjust the margin-left value */
 }
+.lastimg {
+  display: flex;
+}
+
+
+
+
+.cardsection {
+    /* padding: 0px 16px; */
+    margin-top: 10px;
+}
+
+  
+
 }
 
 /* Media Query for screens up to 575px */
-@media (max-width: 575px) {
-  /* Your CSS adjustments for screens up to 575px width */
+@media (min-width: 575px) and (max-width: 768px)  {
+  .mainfilterbox {
+    padding-right: 0;
+}
+.cardsection {
+  /* padding: 0px 16px; */
+  margin-top: 10px;
+}
+.card {
+  /* z-index: 2; */
+  box-shadow: 0px 1px 8px 0px #00000020;
+  margin-bottom: 2%;
+  /* margin-right: 2%; */
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.lastimg {
+  display:flex;
+}
+.mainfilterbox {
+  /* padding-right: 0; */
+  margin-top: 12%;
+  width: 100%;
+  /* height: 780px; */
+}
+.filterboc {
+    margin-left: 0;
+}
+
+.columnpart {
+  /* flex-direction: column; */
+  gap: 0px;
+  /* margin-left: 10px; */
+}
+.sidecol {
+  display: flex;
+  justify-content: center;
+}
+.filterboc {
+  /* margin-left: 11%; */
+  height: 780px;
+  -moz-column-gap: 60px;
+  /* column-gap: 60px; */
+}
+
+
+.containerss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    margin-top: -52%;
+    margin-bottom: 11%;
+    position: relative;
+}
+.view-row {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.filterpart {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    padding-top: 17px;
+    margin-left: 64px;
+    /* justify-items: center; */
+}
+
+.view-row {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-between; */
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: inherit; */
+    justify-content: space-around;
+}
+ .buttonbox {
+    font-family: Founders Grotesk;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
+    text-align: right;
+    /* width: 50px; */
+    height: 19px;
+
+    margin-inline: 18px;
+}
+
 }
 
 /* Media Query for screens up to 420px */
-@media (max-width: 420px) {
-  /* Your CSS adjustments for screens up to 420px width */
+@media (min-width: 420px) and (max-width: 574px){
+  .buttonbox {
+    font-family: Founders Grotesk;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
+    text-align: right;
+    /* width: 50px; */
+    height: 19px;
+
+    margin-inline: 18px;
+}
+.action {
+  color: #E8E8E8;
+  /* font-family: Fira Sans; */
+  /* font-family: 'Fira_sans'; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-inline: -15px;
+}
+.mainrecent{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: -58px;
+}
+
+.containerss {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  margin-top: -60%;
+  position: relative;
+}
+.filterboc {
+  margin-left: 0;
+  height: 980px;
+}
+.buttonbox{
+
+display: none;
+}
+.arrow {
+  width: 21px;
+  height: 15px;
+  margin-inline: -60px;
+}
+.lastimg{
+  display: none !important;
+}
+.rowpart {
+  display: flex;
+  justify-content: end;
+  margin-left: 54%;
+}
+/* .slider-container {
+  display: flex;
+  margin-top: 28px;
+  padding: 0 12px;
+} */
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+  padding: 0 12px;
+}
+
+.mainfilterbox {
+    padding-right: 0;
+    /* padding-right: 0; */
+    margin-top: 12%;
+    width: 100%;
+    /* height: auto; */
+    /* height: 852px; */
+}
+
+.filterrow{
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.sidecol {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 33px;
+  margin-inline-start: 40px;
+}
+.filterpart {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+}
+.filterside {
+  color: #E8DECF;
+  /* font-family: Founders Grotesk; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-align: center;
+  /* margin-inline: 10px; */
+}
+.filterimg{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 36px;
+
+}
+.view-row{
+  display: flex;
+  /* justify-content: space-between; */
+
+}
+.row {
+  display: flex;
+  flex-wrap: inherit;
+}}
+
+element.style {
+}
+/* .search-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 280px;
+}
+.searchig img {
+  height: 38px;
+  width: 86px;
+} */
+.buttonbox{
+  display: flex !important;
 }
 
 /* Media Query for screens up to 350px */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   /* Your CSS adjustments for screens up to 350px width */
+
+  .searchig img {
+    height: 50px;
+    width: 50px;
 }
+
+.swiper{
+  margin-top: -15%;
+}
+.containerss {
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding: 16px; /* Adjust padding for better spacing */
+ /* Reset margin-top */
+}
+.view-row {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: inherit;
+  justify-content: space-evenly;
+}
+
+
+  
+
+.buttonbox {
+    font-family: Founders Grotesk;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    /* text-align: right; */
+    /* width: 50px; */
+    /* height: 53px; */
+    margin-left: 64px;
+    /* margin-inline: 18px; */
+}
+.action {
+  color: #E8E8E8;
+  /* font-family: Fira Sans; */
+  /* font-family: 'Fira_sans'; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.mainfilterbox {
+
+  /* padding-right: 0; */
+
+  /* width: 100%; */
+  /* height: auto; */
+  height: 100px;
+}
+.sidecol{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 33px;
+  margin-inline-start: 40px
+}
+
+}
+.filterimg {
+  height: 35px;
+  width: 35px;
+  /* justify-content: center; */
+  /* display: flex; */
+  justify-content: center;
+  /* text-align: center; */
+  align-items: baseline;
+  /* margin-inline: 29px; */
+  margin-bottom: 21px;} 
+  .lastimg:last-child {
+    display: none; /* Hide the last image on screens with width <= 360px */
+  }
+

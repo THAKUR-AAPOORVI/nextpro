@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Css/Banner.css'
-
+import Image from 'next/image'
 
 
 

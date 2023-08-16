@@ -462,7 +462,7 @@ const CallBanner = () => {
                     <div className='action'>
                         <h1>Live Auctions (45)</h1>
                     </div>
-                    <div className='buttonbox'>
+                    <div className='buttonbox viewallbtn'>
 
                         <h1>View all </h1>
 
@@ -473,15 +473,16 @@ const CallBanner = () => {
                 </div>
 
                 <div >
-                    <div className='filterpart'>
+                    <div className='filterpart row'>
+                        <div className='col-lg-6 sidecol'>
                         <div className='filterside'>
                             <h1 >Filter results</h1>
                         </div>
                         <div className='filterimg'>
                             <span><img onClick={toggleContainer} src='../asset/filterimg.png'></img></span>
                         </div>
-
-
+                        </div> 
+                        <div className='col-lg-6 sidecol'>
 
                         <div className='filterside'>
                             <h1 >View by</h1>
@@ -489,9 +490,9 @@ const CallBanner = () => {
                         </div>
                         <div className='filterimg'>
                             <span><img src='../asset/Group 12.png'></img></span>
-                        </div>
+                        </div> </div>
                         <div className='filterside'></div>
-                        <div className='filterimg'>
+                        <div className='filterimg lastimg'>
                             <span><img src='../asset/btn view.png'></img></span>
                         </div>
 
@@ -509,19 +510,19 @@ const CallBanner = () => {
 
 
                         <div className="rowfilter">
-                            <div className="columnpart">
-
-
-                                <div class="section">
+                            <div className="columnpart ">
+<div className='row  filterrow'>
+                            <div className='col-2'>
+                                <div class="section col-2">
                                     <h2 className='filtheading'>Vehicle</h2>
                                     <ul class="checkbox-list">
                                         <li><input type="checkbox" id="item1" /><label for="item1">Car</label></li>
                                         <li><input type="checkbox" id="item2" /><label for="item2">Bike</label></li>
 
                                     </ul>
-                                </div>
-
-                                <div class="section">
+                                </div> </div>
+                                <div className='col-2'>
+                                <div class="section col-2">
                                 <h2 className='filtheading'>Manufacturer</h2>
                                     <ul class="checkbox-list">
                                         
@@ -539,9 +540,9 @@ const CallBanner = () => {
                                     <div className='viewall'>
                                         <img src='./asset/viewall.png'></img>
                                         </div>
-                                </div>
-
-                                <div class="section">
+                                </div> </div>
+                                <div className='col-2'>
+                                <div class="section col-2">
                                 <h2 className='filtheading'>Auction status</h2>
                                     <ul class="checkbox-list">
                                         <li><input type="checkbox" id="item3" /><label for="item3">Live</label></li>
@@ -551,8 +552,9 @@ const CallBanner = () => {
                                         <li><input type="checkbox" id="item4" /><label for="item4">About to go</label></li>
 
                                     </ul>
-                                </div>
-                                <div class="section">
+                                </div> </div>
+                                <div className='col-2'>
+                                <div class="section col-2">
                                 <h2 className='filtheading'>Seller type</h2>
                                     <ul class="checkbox-list">
                                     <li><input type="checkbox" id="item3" /><label for="item3">Private (4)</label></li>
@@ -560,8 +562,9 @@ const CallBanner = () => {
                                         <li><input type="checkbox" id="item3" /><label for="item3">Managed (4)</label></li>
 
                                     </ul>
-                                </div>
-                                <div class="section">
+                                </div> </div>
+                                <div className='col-2'>
+                                <div class="section col-2 lt">
                                 <h2 className='filtheading'>Location</h2>
                                     <ul class="checkbox-list">
                                     <li><input type="checkbox" id="item3" /><label for="item3">United Kingdom (20)</label></li>
@@ -579,8 +582,9 @@ const CallBanner = () => {
                                     <div className='viewall'>
                                         <img src='./asset/viewall.png'></img>
                                         </div>
-                                </div>
-                                <div class="section">
+                                </div> </div>
+                                <div className='col-2'>
+                                <div class="section col-2">
                                 <h2 className='filtheading'>Auction site</h2>
                                     <ul class="checkbox-list">
                                         <li><input type="checkbox" id="item3" /><label for="item3">Auction site 01</label></li>
@@ -589,7 +593,7 @@ const CallBanner = () => {
                                       
 
                                     </ul>
-                                </div>
+                                </div> </div> </div>
 
 
                             </div>
@@ -621,13 +625,34 @@ const CallBanner = () => {
             >
 
                 <Swiper
-                    slidesPerView={3}
-                   spaceBetween={30}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    // modules={[Pagination]}
-                    className="mySwiper"
+                     slidesPerView={3}
+                     spaceBetween={30}
+                     pagination={{
+                         clickable: true,
+                     }}
+                     className="mySwiper"
+                     breakpoints={{
+                        1280 :{
+                            slidesPerView:3, 
+                            spaceBetween:20,
+                            
+                        },
+                         768: {
+                             slidesPerView: 2,
+                         },
+                         575:{
+                            slidesPerView: 1,
+                         },
+                         420: {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                            // padding:  '0 12px',
+                        },
+                        360:{
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                        }
+                     }}
                 >
 
                     {data.map((item, index) => (
@@ -653,18 +678,22 @@ const CallBanner = () => {
 
 
             <div className='row view-row recent_main'>
+                <div className='mainrecent'>
                 <div className='action'>
                     <h1 className='recent'>Recently sold (32) </h1>
                 </div>
+</div>
                 <div className='buttonbox'>
 
                     <h1>View all </h1>
 
+                
                 </div>
                 <div className='arrow'>
                     <span><img src='../asset/btnarrow.png'></img></span>
                 </div>
-            </div>
+                </div>
+        
 
             {/* <div className='scroller' >
                 {solddata.map((item, index) => (
@@ -690,6 +719,29 @@ const CallBanner = () => {
                 }}
                 // modules={[Pagination]}
                 className="mySwiper"
+                breakpoints={{
+                    1280 :{
+                            slidesPerView:3, 
+                            spaceBetween:20,
+                            
+                        },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    575:{
+                        slidesPerView: 1,
+                     },
+                     420: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        // padding:  '0 12px',
+                    },
+                    360:{
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    }
+                  
+                }}
             >
 
                 {solddata.map((item, index) => (
@@ -712,9 +764,10 @@ const CallBanner = () => {
 
 
             <div className='row view-row recent_main'>
+            <div className='mainrecent'>
                 <div className='action'>
                     <h1 className='recent'>Recently unsold (821)</h1>
-                </div>
+                </div> </div>
                 <div className='buttonbox'>
 
                     <h1>View all </h1>
@@ -733,6 +786,28 @@ const CallBanner = () => {
                 }}
                 // modules={[Pagination]}
                 className="mySwiper"
+                breakpoints={{
+                    1280 :{
+                            slidesPerView:3, 
+                            spaceBetween:20,
+                            
+                        },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    575:{
+                        slidesPerView: 1,
+                     },
+                     420: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        // padding:  '0 12px',
+                    },
+                    360:{
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    }
+                }}
             >
                 <div className='scroller' >
                     {unsolddata.map((item, index) => (
@@ -754,9 +829,10 @@ const CallBanner = () => {
             </Swiper>
 
             <div className='row view-row recent_main'>
+            <div className='mainrecent'>
                 <div className='action'>
                     <h1 className='recent'>Comming Soon (123) </h1>
-                </div>
+                </div></div>
                 <div className='buttonbox'>
 
                     <h1>View all </h1>
@@ -775,6 +851,28 @@ const CallBanner = () => {
                 }}
                 // modules={[Pagination]}
                 className="mySwiper"
+                breakpoints={{
+                    1280 :{
+                            slidesPerView:3, 
+                            spaceBetween:20,
+                            
+                        },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    575:{
+                        slidesPerView: 1,
+                     },
+                     420: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        // padding:  '0 12px',
+                    },
+                    360:{
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    }
+                }}
             >
                 <div className='scroller' >
                     {soonData.map((item, index) => (
