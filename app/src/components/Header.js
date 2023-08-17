@@ -1,6 +1,7 @@
 'use client'
 import React , { useState, useEffect  }from 'react'
 import '../Css/Header.css'
+
 const Header = () => {
     const [isFocused, setIsFocused] = useState(false);
 

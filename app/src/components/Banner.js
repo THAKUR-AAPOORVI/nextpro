@@ -11,7 +11,7 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
             <div className='cardsection'>
                 <div className="card">
                     <div className="card-image">
-                        <img className='cardimg' src={imageUrl} alt={title} />
+                        <Image className='cardimg' src={imageUrl} sizes="100vw" alt={title} width={0} height={0} style={{ width: '100%', height: 'auto' }}/>
                     </div>
                     <div className='radiopill'>
                     <div className='main-pill'>
@@ -26,12 +26,12 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                                 <p className='endsin'>ENDS IN</p>
                                 <p className='endstime'>{EndTime}</p>
                             </div>
-                            <span style={{color:"#E3E3E3"}}>|</span>
+                            <span  className='bar'>|</span>
                             <div className='col-4 currentbid'>
                                 <p className='currentsbids'>CURRENT BID</p>
                                 <p className='rupess'>£ {CurrentPrice}</p>
                             </div>
-                                 <span style={{color:"#E3E3E3"}}>|</span>
+                                 <span className='bar'>|</span>
                             <div className='col-4'>
                                 <p className='bids'>
                                     BIDS
@@ -53,16 +53,16 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                         <div className='row lastrow'>
                             <div className='col-4 last-col'>
                                 <div className='wheelimg'>
-                                    <span><img src='../asset/wheel (2).png'></img> </span><span className='lhd' style={{ marginLeft: "21px" }}><h5>{driveMode}</h5></span>
+                                    <span><Image src='/asset/wheel (2).png' width={17} height={17}></Image> </span><span className='lhd' style={{ marginLeft: "21px" }}><h5>{driveMode}</h5></span>
                                 </div></div>
-                                 <span style={{color:"#E3E3E3"}}>|</span>
+                                 <span  className='bar'>|</span>
 
                             <div className='col-4 speedimg speedometer'>
-                                <span><img src='../asset/icon miles.png'></img> </span><span className='speeds' style={{ marginLeft: "21px" }}><h5>{numberOfMiles} Miles</h5></span>
+                                <span><Image src='/asset/icon miles.png' width={23} height={14}></Image> </span><span className='speeds' style={{ marginLeft: "21px" }}><h5>{numberOfMiles} Miles</h5></span>
                             </div>
-                                 <span style={{color:"#E3E3E3"}}>|</span>
+                                 <span  className='bar'>|</span>
                             <div className='col-4'>
-                                <span><img src='../asset/flag.png'></img> </span>
+                                <span><Image src='/asset/flag.png' width={20} height={20}></Image> </span>
                             </div>
                         </div>
                     </div>

@@ -13,8 +13,9 @@
       display: flex;
       flex-wrap: wrap;
       gap: 2;
-      column-gap: 50px;
-  
+      column-gap: 50px;}
+  .bar{
+    color: #E3E3E3;
   }
 
 .lastimg {
@@ -34,7 +35,7 @@ display:  flex !important;
   width: 100% !important;
 }
 .cardText {
-  color: white;
+  color: #FFFFFF;
 }
 
 .recent {
@@ -68,8 +69,8 @@ display:  flex !important;
 }
 
 .card-content {
-  background: white;
-  color: black;
+  background:  #FFFFFF;
+  color: #000000;
 }
 
 /* .card-description {
@@ -131,7 +132,7 @@ display:  flex !important;
   position: sticky;
   top: 0;
   /* Adjust this value as needed to make it stick at the desired position */
-  background-color: white;
+  background-color:  #FFFFFF;
   box-shadow: 0px 0px 10px 0px #0000001A;
 
 }
@@ -519,7 +520,7 @@ input {
   width: 90%;
   margin-top: 12%;
   border: none;
-  border-top: 1px solid white;
+  border-top: 1px solid  #FFFFFF;
 }
 
 .newslettercontainer {
@@ -548,7 +549,7 @@ input {
   /* transform: translate(-50%, -50%); */
   /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black background */
 
-  color: white;
+  color:  #FFFFFF;
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -597,7 +598,7 @@ input {
 .submit button {
   background-color:
     #0E2328;
-  color: white;
+  color: #FFFFFF;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -685,7 +686,7 @@ color: #565656;
 
 
 input[type=checkbox] {
-  accent-color:black !important;
+  accent-color:#000000 !important;
 }
 /* Media Queries for Responsive Design */
 
@@ -787,7 +788,7 @@ input[type=checkbox] {
 }
 .filterboc {
 
-  background-color: white;
+  background-color:  #FFFFFF;
   /* margin-top: -22%; */
   margin-left: 5%;
   height: 540px;
@@ -808,7 +809,7 @@ input[type=checkbox] {
 /* Default styles */
 .filterboc {
 
-  background-color: white;
+  background-color:  #FFFFFF;
   /* margin-top: -22%; */
   margin-left: 5%;
   height: 540px;
@@ -878,7 +879,7 @@ input[type=checkbox] {
   margin-bottom: 20px;
   padding: 10px;
   /* border: 1px solid #ccc; */
-  background-color: white;
+  background-color:  #FFFFFF;
   box-sizing: border-box;
   }
   
@@ -929,7 +930,7 @@ input[type=checkbox] {
   
   input[type="checkbox"]::before {
     background-color:  #ec9017 !important;
-    color: white;
+    color:  #FFFFFF;
   }
   
   
@@ -951,7 +952,7 @@ input[type=checkbox] {
       }
       
       .section {
-          width: calc(50% - 20px);
+          width: 480px;
       }
       
       .search-container {
@@ -1458,7 +1459,7 @@ display: none;
   justify-content: space-around;
   margin-right: 36px;
 }
-}
+
 
 .recent_main{
   display: flex;
@@ -1483,6 +1484,9 @@ element.style {
 .vnone {
   display: none;
 }
+}
+
+
 
 /* Media Query for screens up to 350px */
 @media (max-width: 360px) {

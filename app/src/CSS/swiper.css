@@ -37,3 +37,25 @@
     display: flex;
     margin-top: 28px;
 }
+.main{
+    /* width: 80%;
+    position: absolute;
+    white-space: nowrap; */
+    /* overflow: hidden; */
+  }
+  @media screen and (min-zoom: 25%) and (max-zoom: 50%) {
+    /* your CSS styles here */
+
+/* 
+
+    .containerss{
+        margin-top: -6%;
+    }
+    .slider-container{
+        display: flex;
+        padding: 0 17%;
+    } */
+ }
+/*  */
+
+

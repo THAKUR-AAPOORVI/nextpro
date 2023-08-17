@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Css/Banner.css'
+import Image from 'next/image'
 
 const RecentlyUnsold = ({ imageUrl, title, EndTime, status,CurrentPrice, numberOfBids, driveMode, numberOfMiles, description }) => {
     return (
@@ -7,7 +8,7 @@ const RecentlyUnsold = ({ imageUrl, title, EndTime, status,CurrentPrice, numberO
             <div className='cardsection'>
                 <div className="card">
                     <div className="card-image">
-                        <img className='cardimg' src={imageUrl} alt={title} />
+                    <Image className='cardimg' src={imageUrl} sizes="100vw" alt={title} width={0} height={0} style={{ width: '100%', height: 'auto' }}/>
                     </div>
                     <div className='radiopill'>
                     <div className='main-pill'>

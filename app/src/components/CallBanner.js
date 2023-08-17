@@ -20,7 +20,7 @@ import { images } from '../../../next.config';
 
 const data = [
     {
-        "image": "../asset/Bitmap (1).png",
+        "image": "/asset/Bitmap (1).png",
         "endTime": "18:00:00",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
@@ -31,7 +31,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/usa.png"
     },
     {
-        "image": "../asset/americascope.png",
+        "image": "/asset/americascope.png",
         "endTime": "20:30:00",
         "numberOfBids": 10,
         "currentBidPrice": 18000,
@@ -42,7 +42,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/uk.png"
     },
     {
-        "image": "../asset/porsche2.png",
+        "image": "/asset/porsche2.png",
         "endTime": "16:45:00",
         "numberOfBids": 3,
         "currentBidPrice": 12000,
@@ -53,7 +53,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/germany.png"
     },
     {
-        "image": "../asset/ferrari.png",
+        "image": "/asset/ferrari.png",
         "endTime": "2:15:00",
         "numberOfBids": 7,
         "currentBidPrice": 22000,
@@ -64,7 +64,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/canada.png"
     },
     {
-        "image": "../asset/rollsro.png",
+        "image": "/asset/rollsro.png",
         "endTime": "21:00:00",
         "numberOfBids": 2,
         "currentBidPrice": 13500,
@@ -75,7 +75,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/japan.png"
     },
     {
-        "image": "../asset/214turbo.png",
+        "image": "/asset/214turbo.png",
         "endTime": "14:30:00",
         "numberOfBids": 4,
         "currentBidPrice": 9000,
@@ -86,7 +86,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/france.png"
     },
     {
-        "image": "../asset/lg.png",
+        "image": "/asset/lg.png",
         "endTime": "17:45:00",
         "numberOfBids": 6,
         "currentBidPrice": 15800,
@@ -97,7 +97,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/italy.png"
     },
     {
-        "image": "../asset/2009pr.png",
+        "image": "/asset/2009pr.png",
         "endTime": "10:00:00",
         "numberOfBids": 9,
         "currentBidPrice": 10500,
@@ -108,7 +108,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/spain.png"
     },
     {
-        "image": "../asset/1973.png",
+        "image": "/asset/1973.png",
         "endTime": "9:30:00",
         "numberOfBids": 1,
         "currentBidPrice": 7500,
@@ -119,7 +119,7 @@ const data = [
         "countryIconImage": "https://example.com/flags/australia.png"
     },
     {
-        "image": "../asset/2007.png",
+        "image": "/asset/2007.png",
         "endTime": "15:45:00",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
@@ -133,7 +133,7 @@ const data = [
 
 const solddata = [
     {
-        "image": "../asset/Bitmap (1).png",
+        "image": "/asset/Bitmap (1).png",
         "soldPrice": "270000",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
@@ -145,7 +145,7 @@ const solddata = [
     },
     {
 
-        "image": "../asset/2007.png",
+        "image": "/asset/2007.png",
         "soldPrice": "270000",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
@@ -156,7 +156,7 @@ const solddata = [
         "countryIconImage": "https://example.com/flags/china.png"
     },
     {
-        "image": "../asset/Bitmap (1).png",
+        "image": "/asset/Bitmap (1).png",
         "soldPrice": "270000",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
@@ -168,7 +168,7 @@ const solddata = [
     },
     {
 
-        "image": "../asset/2007.png",
+        "image": "/asset/2007.png",
         "soldPrice": "270000",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
@@ -178,7 +178,7 @@ const solddata = [
         "numberOfMiles": 1500,
         "countryIconImage": "https://example.com/flags/china.png"
     }, {
-        "image": "../asset/Bitmap (1).png",
+        "image": "/asset/Bitmap (1).png",
         "soldPrice": "270000",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
@@ -190,7 +190,7 @@ const solddata = [
     },
     {
 
-        "image": "../asset/2007.png",
+        "image": "/asset/2007.png",
         "soldPrice": "270000",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
@@ -205,7 +205,7 @@ const solddata = [
 
 const unsolddata = [
     {
-        "image": "../asset/Bitmap (1).png",
+        "image": "/asset/Bitmap (1).png",
         "status": "Unsold",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
@@ -216,7 +216,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/usa.png"
     },
     {
-        "image": "../asset/americascope.png",
+        "image": "/asset/americascope.png",
         "status": "Unsold",
         "numberOfBids": 10,
         "currentBidPrice": 18000,
@@ -227,7 +227,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/uk.png"
     },
     {
-        "image": "../asset/porsche2.png",
+        "image": "/asset/porsche2.png",
         "status": "Unsold",
         "numberOfBids": 3,
         "currentBidPrice": 12000,
@@ -238,7 +238,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/germany.png"
     },
     {
-        "image": "../asset/ferrari.png",
+        "image": "/asset/ferrari.png",
         "status": "Unsold",
         "numberOfBids": 7,
         "currentBidPrice": 22000,
@@ -249,7 +249,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/canada.png"
     },
     {
-        "image": "../asset/rollsro.png",
+        "image": "/asset/rollsro.png",
         "status": "Unsold",
         "numberOfBids": 2,
         "currentBidPrice": 13500,
@@ -260,7 +260,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/japan.png"
     },
     {
-        "image": "../asset/214turbo.png",
+        "image": "/asset/214turbo.png",
         "status": "Unsold",
         "numberOfBids": 4,
         "currentBidPrice": 9000,
@@ -271,7 +271,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/france.png"
     },
     {
-        "image": "../asset/lg.png",
+        "image": "/asset/lg.png",
         "status": "Unsold",
         "numberOfBids": 6,
         "currentBidPrice": 15800,
@@ -282,7 +282,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/italy.png"
     },
     {
-        "image": "../asset/2009pr.png",
+        "image": "/asset/2009pr.png",
         "status": "Unsold",
         "numberOfBids": 9,
         "currentBidPrice": 10500,
@@ -293,7 +293,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/spain.png"
     },
     {
-        "image": "../asset/1973.png",
+        "image": "/asset/1973.png",
         "status": "Unsold",
         "numberOfBids": 1,
         "currentBidPrice": 7500,
@@ -304,7 +304,7 @@ const unsolddata = [
         "countryIconImage": "https://example.com/flags/australia.png"
     },
     {
-        "image": "../asset/2007.png",
+        "image": "/asset/2007.png",
         "status": "Unsold",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
@@ -320,7 +320,7 @@ const unsolddata = [
 
 const soonData = [
     {
-        "image": "../asset/Bitmap (1).png",
+        "image": "/asset/Bitmap (1).png",
         "arriveDate": " 13th october",
         "numberOfBids": 5,
         "currentBidPrice": 15000,
@@ -331,7 +331,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/usa.png"
     },
     {
-        "image": "../asset/americascope.png",
+        "image": "/asset/americascope.png",
         "arriveDate": " 14th october",
         "numberOfBids": 10,
         "currentBidPrice": 18000,
@@ -342,7 +342,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/uk.png"
     },
     {
-        "image": "../asset/porsche2.png",
+        "image": "/asset/porsche2.png",
         "arriveDate": " 13th october",
         "numberOfBids": 3,
         "currentBidPrice": 12000,
@@ -353,7 +353,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/germany.png"
     },
     {
-        "image": "../asset/ferrari.png",
+        "image": "/asset/ferrari.png",
         "arriveDate": " 15th october",
         "numberOfBids": 7,
         "currentBidPrice": 22000,
@@ -364,7 +364,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/canada.png"
     },
     {
-        "image": "../asset/rollsro.png",
+        "image": "/asset/rollsro.png",
         "arriveDate": " 13th october",
         "numberOfBids": 2,
         "currentBidPrice": 13500,
@@ -375,7 +375,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/japan.png"
     },
     {
-        "image": "../asset/214turbo.png",
+        "image": "/asset/214turbo.png",
         "arriveDate": " 13th october",
         "numberOfBids": 4,
         "currentBidPrice": 9000,
@@ -386,7 +386,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/france.png"
     },
     {
-        "image": "../asset/lg.png",
+        "image": "/asset/lg.png",
         "arriveDate": " 13th october",
         "numberOfBids": 6,
         "currentBidPrice": 15800,
@@ -397,7 +397,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/italy.png"
     },
     {
-        "image": "../asset/2009pr.png",
+        "image": "/asset/2009pr.png",
         "arriveDate": " 13th october",
         "numberOfBids": 9,
         "currentBidPrice": 10500,
@@ -408,7 +408,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/spain.png"
     },
     {
-        "image": "../asset/1973.png",
+        "image": "/asset/1973.png",
         "arriveDate": " 13th october",
         "numberOfBids": 1,
         "currentBidPrice": 7500,
@@ -419,7 +419,7 @@ const soonData = [
         "countryIconImage": "https://example.com/flags/australia.png"
     },
     {
-        "image": "../asset/2007.png",
+        "image": "/asset/2007.png",
         "arriveDate": " 13th october",
         "numberOfBids": 12,
         "currentBidPrice": 27000,
@@ -442,8 +442,7 @@ const soonData = [
 const CallBanner = () => {
 
 
- 
-
+   
     const [showContainer, setShowContainer] = useState(false);
 
     const toggleContainer = () => {
@@ -456,6 +455,7 @@ const CallBanner = () => {
         // Close the filter container
         setShowContainer(false);
     };
+   
 
     return (
         <>
@@ -601,6 +601,8 @@ const CallBanner = () => {
 
                             </div>
 
+
+{/* accordian set  */}
 
 
 <div className='btnpart'>

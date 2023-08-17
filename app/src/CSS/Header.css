@@ -3,7 +3,7 @@
 
 
 .main{
-  background-color: white;
+  background-color: #ffffff;
 }
 .mainarea {
   /* background-image: url('/public/asset/1973.png'); */
@@ -180,7 +180,7 @@ padding: 5px;
 font-size: 16px;
 border-bottom: 2px solid #E8DECF; /* Red bottom line with 2px border */
 background-color: transparent; /* Set background color as transparent */
-color: white; /* Text color */
+color: #ffffff;; /* Text color */
   /* top: 311px;
   left: 406px */
   
