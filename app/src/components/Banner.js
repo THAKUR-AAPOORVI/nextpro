@@ -23,7 +23,7 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                                 </div> */}
 
                             <div className='col-4 currentbid'>
-                                <p className='endsin'>ENDS IN</p>
+                                <p  className='endsin'>ENDS IN</p>
                                 <p className='endstime'>{EndTime}</p>
                             </div>
                             <span  className='bar'>|</span>
@@ -69,7 +69,7 @@ const Banner = ({ imageUrl, title, EndTime, CurrentPrice, numberOfBids, driveMod
                 </div>
             </div>
          
-
+          
         </>
     )
 }

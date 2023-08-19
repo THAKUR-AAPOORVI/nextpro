@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <>
     <div className='main'>
-     <Header/> 
-     <CallBanner/>
+     {/* <Header/> 
+     <CallBanner/> */}
     {/* <Abc/>  */}
-    {/* <Listing/> */}
+    <Listing/>
         </div>
     </>
   )

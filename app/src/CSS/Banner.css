@@ -1489,12 +1489,17 @@ element.style {
 
 
 /* Media Query for screens up to 350px */
-@media (max-width: 360px) {
+@media  (min-width:320)  and(max-width: 375){
   /* Your CSS adjustments for screens up to 350px width */
 
   .searchig img {
     height: 50px;
     width: 50px;
+}
+.rowpart {
+  display: flex;
+  justify-content: end;
+  margin-left: 47%;
 }
 
 .swiper{
